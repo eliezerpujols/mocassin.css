@@ -1,0 +1,171 @@
+/*!
+   Mocassin CSS v0.0.0 - https://github.com/wideckop/mocasin.css
+   Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+   Copyright (c) 2016 Eliezer Pujols (@wideckop)
+*/
+.mc-item,
+.mc-item__caption {
+  margin: 0;
+  padding: 0;
+}
+
+.mc-item {
+  position: relative;
+  display: block;
+}
+
+.mc-item .mc-item__image {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.mc-item .mc-item__caption {
+  display: block;
+}
+
+@media (min-width: 480px) {
+  /* -------------------------
+
+   Sliding In X
+
+---------------------------- */
+  .mc-item.mc-item--sliding-in-right > .mc-item__caption, .mc-item.mc-item--sliding-in-left > .mc-item__caption {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .mc-item.mc-item--sliding-in-right > .mc-item__image, .mc-item.mc-item--sliding-in-left > .mc-item__image {
+    z-index: 2;
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+    transition: -webkit-transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  }
+  .mc-item.mc-item--sliding-in-right:hover > .mc-item__image, .mc-item.mc-item--sliding-in-right:focus > .mc-item__image {
+    -webkit-transform: translate(100%, 0);
+        -ms-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  .mc-item.mc-item--sliding-in-left:hover > .mc-item__image, .mc-item.mc-item--sliding-in-left:focus > .mc-item__image {
+    -webkit-transform: translate(-100%, 0);
+        -ms-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+  /* -------------------------
+
+   Sliding In Y
+
+---------------------------- */
+  .mc-item.mc-item--sliding-in-top > .mc-item__caption, .mc-item.mc-item--sliding-in-bottom > .mc-item__caption {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .mc-item.mc-item--sliding-in-top > .mc-item__image, .mc-item.mc-item--sliding-in-bottom > .mc-item__image {
+    z-index: 2;
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+    transition: -webkit-transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  }
+  .mc-item.mc-item--sliding-in-top:hover > .mc-item__image, .mc-item.mc-item--sliding-in-top:focus > .mc-item__image {
+    -webkit-transform: translate(0, -100%);
+        -ms-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+  }
+  .mc-item.mc-item--sliding-in-bottom:hover > .mc-item__image, .mc-item.mc-item--sliding-in-bottom:focus > .mc-item__image {
+    -webkit-transform: translate(0, 100%);
+        -ms-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+  }
+  /* -------------------------
+
+   Rotating In X
+
+---------------------------- */
+  .mc-item.mc-item--rotating-in-top > .mc-item__caption, .mc-item.mc-item--rotating-in-bottom > .mc-item__caption {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .mc-item.mc-item--rotating-in-top > .mc-item__image, .mc-item.mc-item--rotating-in-bottom > .mc-item__image {
+    z-index: 2;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    transition: -webkit-transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  }
+  .mc-item.mc-item--rotating-in-top:hover > .mc-item__image, .mc-item.mc-item--rotating-in-top:focus > .mc-item__image {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  .mc-item.mc-item--rotating-in-top > .mc-item__image {
+    -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  .mc-item.mc-item--rotating-in-bottom:hover > .mc-item__image, .mc-item.mc-item--rotating-in-bottom:focus > .mc-item__image {
+    -webkit-transform: rotateX(-180deg);
+            transform: rotateX(-180deg);
+  }
+  .mc-item.mc-item--rotating-in-bottom > .mc-item__image {
+    -webkit-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+  /* -------------------------
+
+   Rotating In Y
+
+---------------------------- */
+  .mc-item.mc-item--rotating-in-right > .mc-item__caption, .mc-item.mc-item--rotating-in-left > .mc-item__caption {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .mc-item.mc-item--rotating-in-right > .mc-item__image, .mc-item.mc-item--rotating-in-left > .mc-item__image {
+    z-index: 2;
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+    transition: -webkit-transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  }
+  .mc-item.mc-item--rotating-in-right:hover > .mc-item__image, .mc-item.mc-item--rotating-in-right:focus > .mc-item__image {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  .mc-item.mc-item--rotating-in-right > .mc-item__image {
+    -webkit-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+  .mc-item.mc-item--rotating-in-left:hover > .mc-item__image, .mc-item.mc-item--rotating-in-left:focus > .mc-item__image {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+  }
+  .mc-item.mc-item--rotating-in-left > .mc-item__image {
+    -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+}

@@ -1,0 +1,61 @@
+/*!
+   Mocassin CSS v0.0.0 - https://github.com/wideckop/mocasin.css
+   Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+   Copyright (c) 2016 Eliezer Pujols (@wideckop)
+*/
+
+// MIXINS
+// ====================================
+//
+// Import mixins for the cards animated.
+
+@import "mixins"; 
+
+// RESPONSIVE
+// ====================================
+//
+// Responsive, Yes or Not
+
+$responsive: true;
+
+// BASE STYLES
+// ====================================
+//
+// Setting styles for the cards animated.
+
+.mc-item,
+.mc-item__caption {
+   margin: 0;
+   padding: 0;
+}
+
+.mc-item {
+   position: relative;
+   display: block;
+   .mc-item__image {
+      display: block;
+      width: 100%;
+      margin: 0;
+   }
+   .mc-item__caption {
+      display: block;
+   }
+}
+
+// IMPORT EFFECTS
+// ====================================
+//
+// Import all effects animations.
+// You can remove the import rules for animations you don't want.
+
+// Break this effects in a mobile
+@include breakpoint($responsive) {
+   // Sliding
+   @import "sliding/slidingInX";
+   @import "sliding/slidingInY";
+
+   // Rotating
+   @import "rotating/rotatingInX";
+   @import "rotating/rotatingInY";
+}

@@ -1,0 +1,40 @@
+// MIXINS FOR: BREAKPOINT
+
+@mixin breakpoint($break) {
+   @if($break == true) {
+         @media (min-width: 480px) {@content;}
+   } @else {
+      @content;
+   }
+}
+
+// MIXINS FOR: 'sliding-*'
+
+@mixin sliding($x, $y) {
+   &:hover,
+   &:focus {
+      > .mc-item__image {
+         transform: translate($x, $y);
+      }
+   }
+}
+
+// MIXINS FOR: 'rotating-*'
+
+@mixin rotatingX($x) {
+   &:hover,
+   &:focus {
+      > .mc-item__image {
+         transform: rotateX($x);
+      }
+   }
+}
+
+@mixin rotatingY($y) {
+   &:hover,
+   &:focus {
+      > .mc-item__image {
+         transform: rotateY($y);
+      }
+   }
+}
