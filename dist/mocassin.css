@@ -1,11 +1,16 @@
 /*!
-   Mocassin CSS v0.0.0 - https://github.com/wideckop/mocasin.css
+   Mocassin CSS v0.0.0
    Licensed under the MIT license - http://opensource.org/licenses/MIT
 
    Copyright (c) 2016 Eliezer Pujols (@wideckop)
 */
 .mc-item,
-.mc-item__caption {
+.mc-item * {
+  box-sizing: border-box;
+}
+
+.mc-item,
+.mc-item .mc-item__caption {
   margin: 0;
   padding: 0;
 }
@@ -17,6 +22,9 @@
 
 .mc-item .mc-item__image {
   display: block;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
   width: 100%;
   margin: 0;
 }
@@ -44,9 +52,6 @@
     -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
             transform: translate(0, 0);
-    transition: -webkit-transform 0.3s ease-in;
-    transition: transform 0.3s ease-in;
-    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
   }
   .mc-item.mc-item--sliding-in-right:hover > .mc-item__image, .mc-item.mc-item--sliding-in-right:focus > .mc-item__image {
     -webkit-transform: translate(100%, 0);
@@ -76,9 +81,6 @@
     -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
             transform: translate(0, 0);
-    transition: -webkit-transform 0.3s ease-in;
-    transition: transform 0.3s ease-in;
-    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
   }
   .mc-item.mc-item--sliding-in-top:hover > .mc-item__image, .mc-item.mc-item--sliding-in-top:focus > .mc-item__image {
     -webkit-transform: translate(0, -100%);
@@ -107,9 +109,6 @@
     z-index: 2;
     -webkit-transform: rotateX(0);
             transform: rotateX(0);
-    transition: -webkit-transform 0.3s ease-in;
-    transition: transform 0.3s ease-in;
-    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
   }
   .mc-item.mc-item--rotating-in-top:hover > .mc-item__image, .mc-item.mc-item--rotating-in-top:focus > .mc-item__image {
     -webkit-transform: rotateX(180deg);
@@ -146,9 +145,6 @@
     z-index: 2;
     -webkit-transform: rotateY(0);
             transform: rotateY(0);
-    transition: -webkit-transform 0.3s ease-in;
-    transition: transform 0.3s ease-in;
-    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
   }
   .mc-item.mc-item--rotating-in-right:hover > .mc-item__image, .mc-item.mc-item--rotating-in-right:focus > .mc-item__image {
     -webkit-transform: rotateY(180deg);
@@ -186,9 +182,6 @@
     -webkit-transform: rotate(0);
         -ms-transform: rotate(0);
             transform: rotate(0);
-    transition: -webkit-transform 0.3s ease-in;
-    transition: transform 0.3s ease-in;
-    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
   }
   .mc-item.mc-item--rotating-in-top-left:hover > .mc-item__image, .mc-item.mc-item--rotating-in-top-left:focus > .mc-item__image {
     -webkit-transform: rotate(-90deg);

@@ -1,5 +1,5 @@
 /*!
-   Mocassin CSS v0.0.0 - https://github.com/wideckop/mocasin.css
+   Mocassin CSS v0.0.0
    Licensed under the MIT license - http://opensource.org/licenses/MIT
 
    Copyright (c) 2016 Eliezer Pujols (@wideckop)
@@ -24,10 +24,16 @@ $responsive: true;
 //
 // Setting styles for the cards animated.
 
-.mc-item,
-.mc-item__caption {
-   margin: 0;
-   padding: 0;
+.mc-item {
+   &, // This element: '&'
+   & * {
+      box-sizing: border-box;
+   }
+   &,
+   .mc-item__caption {
+      margin: 0;
+      padding: 0;
+   }
 }
 
 .mc-item {
@@ -35,6 +41,7 @@ $responsive: true;
    display: block;
    .mc-item__image {
       display: block;
+      transition: transform 0.3s ease-in;
       width: 100%;
       margin: 0;
    }

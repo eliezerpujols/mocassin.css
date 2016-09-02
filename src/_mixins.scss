@@ -21,20 +21,20 @@
 
 // MIXINS FOR: 'rotating-*'
 
-@mixin rotatingX($x) {
+@mixin rotatingX($deg) {
    &:hover,
    &:focus {
       > .mc-item__image {
-         transform: rotateX($x);
+         transform: rotateX($deg);
       }
    }
 }
 
-@mixin rotatingY($y) {
+@mixin rotatingY($deg) {
    &:hover,
    &:focus {
       > .mc-item__image {
-         transform: rotateY($y);
+         transform: rotateY($deg);
       }
    }
 }
