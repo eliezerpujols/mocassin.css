@@ -38,3 +38,12 @@
       }
    }
 }
+
+@mixin rotatingXY($deg) {
+   &:hover,
+   &:focus {
+      > .mc-item__image {
+         transform: rotate($deg);
+      }
+   }
+}
