@@ -1,0 +1,33 @@
+// SETTINGS
+// ====================================
+//
+// Responsive, Yes or Not
+
+$responsive: true;
+
+// Global and Partial Timing Functions
+
+$g-timing-function: ease; // Gobal
+$p-timing-function: ease-in-out; // Partial
+
+// All effects Name
+
+$effect-1a: 'sliding-in-right';
+$effect-1b: 'sliding-in-left';
+
+$effect-1c: 'sliding-in-top';
+$effect-1d: 'sliding-in-bottom';
+
+$effect-2a: 'rotating-in-top';
+$effect-2b: 'rotating-in-bottom';
+
+$effect-2c: 'rotating-in-top-left';
+$effect-2d: 'rotating-in-top-right';
+$effect-2e: 'rotating-in-bottom-left';
+$effect-2f: 'rotating-in-bottom-right';
+
+$effect-2g: 'rotating-in-right';
+$effect-2h: 'rotating-in-left';
+
+$effect-3a: 'scale-up';
+$effect-3b: 'scale-down';
