@@ -5,10 +5,10 @@
 ---------------------------- */
 
 .mc-item {
-   &.mc-item--rotating-in-top-left,
-   &.mc-item--rotating-in-top-right,
-   &.mc-item--rotating-in-bottom-left,
-   &.mc-item--rotating-in-bottom-right {
+   &.mc-item--#{$effect-2c},
+   &.mc-item--#{$effect-2d},
+   &.mc-item--#{$effect-2e},
+   &.mc-item--#{$effect-2f} {
       > .mc-item__caption {
          z-index: -1;
          position: absolute;
@@ -24,7 +24,7 @@
    }
 
    // Rotating In Top Left
-   &.mc-item--rotating-in-top-left {
+   &.mc-item--#{$effect-2c} {
       @include rotatingXY(-90deg);
       > .mc-item__image {
          transform-origin: 0% 0%;
@@ -32,7 +32,7 @@
    }
 
    // Rotating In Bottom Left
-   &.mc-item--rotating-in-bottom-left {
+   &.mc-item--#{$effect-2e} {
       @include rotatingXY(90deg);
       > .mc-item__image {
          transform-origin: 0% 100%;
@@ -40,7 +40,7 @@
    }
 
    // Rotating In Top Right
-   &.mc-item--rotating-in-top-right {
+   &.mc-item--#{$effect-2d} {
       @include rotatingXY(90deg);
       > .mc-item__image {
          transform-origin: 100% 0%;
@@ -48,7 +48,7 @@
    }
 
    // Rotating In Bottom Right
-   &.mc-item--rotating-in-bottom-right {
+   &.mc-item--#{$effect-2f} {
       @include rotatingXY(-90deg);
       > .mc-item__image {
          transform-origin: 100% 100%;

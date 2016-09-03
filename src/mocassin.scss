@@ -12,12 +12,12 @@
 
 @import "mixins";
 
-// RESPONSIVE
+// SETTINGS
 // ====================================
 //
-// Responsive, Yes or Not
+// Responsive, Yes or Not || Global and Partial Timing Functions
 
-$responsive: true;
+@import "functions";
 
 // BASE STYLES
 // ====================================
@@ -41,7 +41,7 @@ $responsive: true;
    display: block;
    .mc-item__image {
       display: block;
-      transition: transform 0.3s ease-in;
+      transition: transform 0.3s $g-timing-function;
       width: 100%;
       margin: 0;
    }

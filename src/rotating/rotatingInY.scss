@@ -5,8 +5,8 @@
 ---------------------------- */
 
 .mc-item {
-   &.mc-item--rotating-in-right,
-   &.mc-item--rotating-in-left {
+   &.mc-item--#{$effect-2g},
+   &.mc-item--#{$effect-2h} {
       > .mc-item__caption {
          z-index: -1;
          position: absolute;
@@ -22,7 +22,7 @@
    }
 
    // Rotating In Right
-   &.mc-item--rotating-in-right {
+   &.mc-item--#{$effect-2g} {
       @include rotatingY(180deg);
       > .mc-item__image {
          transform-origin: 100% 100%;
@@ -30,7 +30,7 @@
    }
 
    // Rotating In Left
-   &.mc-item--rotating-in-left {
+   &.mc-item--#{$effect-2h} {
       @include rotatingY(-180deg);
       > .mc-item__image {
          transform-origin: 0% 0%;

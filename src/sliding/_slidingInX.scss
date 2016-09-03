@@ -5,8 +5,8 @@
 ---------------------------- */
 
 .mc-item {
-   &.mc-item--sliding-in-right,
-   &.mc-item--sliding-in-left {
+   &.mc-item--#{$effect-1a},
+   &.mc-item--#{$effect-1b} {
       > .mc-item__caption {
          z-index: -1;
          position: absolute;
@@ -22,12 +22,12 @@
    }
 
    // Sliding In Right
-   &.mc-item--sliding-in-right {
+   &.mc-item--#{$effect-1a} {
       @include sliding(100%, 0);
    }
 
    // Sliding In Left
-   &.mc-item--sliding-in-left {
+   &.mc-item--#{$effect-1b} {
       @include sliding(-100%, 0);
    }
 }
