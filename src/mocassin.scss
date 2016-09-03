@@ -66,4 +66,8 @@ $responsive: true;
    @import "rotating/rotatingInX";
    @import "rotating/rotatingInY";
    @import "rotating/rotatingInXY";
+
+   // Scale
+   @import "scale/scaleUp";
+   @import "scale/scaleDown";
 }
