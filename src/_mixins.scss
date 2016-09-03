@@ -47,3 +47,31 @@
       }
    }
 }
+
+// MIXINS FOR: 'scale-*'
+
+@mixin scaleUp($x, $y, $xX, $yY) {
+   &:hover,
+   &:focus {
+      > .mc-item__caption {
+         transform: scale($x) rotate($y);
+      }
+
+      > .mc-item__image {
+         transform: scale($xX) rotate($yY);
+      }
+   }
+}
+
+@mixin scaleDown($x, $y, $xX, $yY) {
+   &:hover,
+   &:focus {
+      > .mc-item__caption {
+         transform: scale($xX) rotate($yY);
+      }
+
+      > .mc-item__image {
+         transform: scale($x) rotate($y);
+      }
+   }
+}
