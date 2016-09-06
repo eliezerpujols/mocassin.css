@@ -19,6 +19,18 @@
    }
 }
 
+@mixin slidingCap($y){
+   &:hover,
+   &:focus {
+      > .mc-item__caption {
+         transform: translateY(0);
+      }
+      > .mc-item__image {
+         transform: translateY($y);
+      }
+   }
+}
+
 // MIXINS FOR: 'rotating-*'
 
 @mixin rotatingX($deg) {

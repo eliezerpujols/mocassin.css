@@ -1,0 +1,41 @@
+/* -------------------------
+
+   Sliding Caption in X
+
+---------------------------- */
+
+.mc-item {
+   &.mc-item--#{$effect-1e},
+   &.mc-item--#{$effect-1f} {
+      overflow: hidden;
+      > .mc-item__caption {
+         z-index: 2;
+         position: absolute;
+         left: 0;
+         transition: transform 0.3s $g-timing-function;
+         width: 100%;
+      }
+      > .mc-item__image {
+         z-index: 1;
+         transform: translateY(0);
+      }
+   }
+
+   // Sliding Caption In Top
+   &.mc-item--#{$effect-1e} {
+      > .mc-item__caption {
+         top: 0;
+         transform: translateY(-100%);
+      }
+      @include slidingCap(1em);
+   }
+
+   // Sliding Caption In Bottom
+   &.mc-item--#{$effect-1f} {
+      > .mc-item__caption {
+         bottom: 0;
+         transform: translateY(100%);
+      }
+      @include slidingCap(-1em);
+   }
+}
