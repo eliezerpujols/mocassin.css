@@ -1,5 +1,4 @@
 // MIXINS FOR: BREAKPOINT
-
 @mixin breakpoint($break) {
    @if($break == true) {
          @media (min-width: 480px) {@content;}
@@ -8,82 +7,13 @@
    }
 }
 
-// MIXINS FOR: 'sliding-*'
-
-@mixin sliding($x, $y) {
+// MIXINS FOR: effect-5*
+@mixin effect-5($x, $y) {
    &:hover,
    &:focus {
-      > .mc-item__image {
+      > .mc-item__caption {
+         transition-delay: 0.2s;
          transform: translate($x, $y);
-      }
-   }
-}
-
-@mixin slidingCap($y){
-   &:hover,
-   &:focus {
-      > .mc-item__caption {
-         transform: translateY(0);
-      }
-      > .mc-item__image {
-         transform: translateY($y);
-      }
-   }
-}
-
-// MIXINS FOR: 'rotating-*'
-
-@mixin rotatingX($deg) {
-   &:hover,
-   &:focus {
-      > .mc-item__image {
-         transform: rotateX($deg);
-      }
-   }
-}
-
-@mixin rotatingY($deg) {
-   &:hover,
-   &:focus {
-      > .mc-item__image {
-         transform: rotateY($deg);
-      }
-   }
-}
-
-@mixin rotatingXY($deg) {
-   &:hover,
-   &:focus {
-      > .mc-item__image {
-         transform: rotate($deg);
-      }
-   }
-}
-
-// MIXINS FOR: 'scale-*'
-
-@mixin scaleUp($x, $y, $xX, $yY) {
-   &:hover,
-   &:focus {
-      > .mc-item__caption {
-         transform: scale($x) rotate($y);
-      }
-
-      > .mc-item__image {
-         transform: scale($xX) rotate($yY);
-      }
-   }
-}
-
-@mixin scaleDown($x, $y, $xX, $yY) {
-   &:hover,
-   &:focus {
-      > .mc-item__caption {
-         transform: scale($xX) rotate($yY);
-      }
-
-      > .mc-item__image {
-         transform: scale($x) rotate($y);
       }
    }
 }

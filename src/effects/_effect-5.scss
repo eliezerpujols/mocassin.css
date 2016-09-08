@@ -1,0 +1,63 @@
+/* -------------------------
+   Effect 5
+---------------------------- */
+
+// IN THIS EFFECT:
+//
+// Image Scale and Caption Translate
+.mc-item {
+   &.mc-item--effect-5,
+   &.mc-item--effect-5b,
+   &.mc-item--effect-5c,
+   &.mc-item--effect-5d {
+      overflow: hidden;
+      > .mc-item__image {
+         transform: scale(1);
+      }
+      > .mc-item__caption {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+      }
+
+      &:hover,
+      &:focus {
+         > .mc-item__image {
+            transform: scale(0.5);
+         }
+      }
+   }
+
+   &.mc-item--effect-5,
+   &.mc-item--effect-5b,
+   &.mc-item--effect-5c,
+   &.mc-item--effect-5d {
+      @include effect-5(0, 0);
+   }
+
+   // Scale and Translate in X
+   &.mc-item--effect-5 {
+      > .mc-item__caption {
+         transform: translate(100%, 0);
+      }
+   }
+   &.mc-item--effect-5b {
+      > .mc-item__caption {
+         transform: translate(-100%, 0);
+      }
+   }
+
+   // Scale and Translate in Y
+   &.mc-item--effect-5c {
+      > .mc-item__caption {
+         transform: translate(0, -100%);
+      }
+   }
+   &.mc-item--effect-5d {
+      > .mc-item__caption {
+         transform: translate(0, 100%);
+      }
+   }
+}
