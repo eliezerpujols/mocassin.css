@@ -1,0 +1,30 @@
+/* -------------------------
+   Effect 4
+---------------------------- */
+
+// IN THIS EFFECT:
+//
+// Image ZoomOut
+.mc-item {
+   &.mc-item--effect-4 {
+      > .mc-item__image {
+         z-index: 2;
+         transform: scale(1);
+      }
+      > .mc-item__caption {
+         z-index: -1;
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+      }
+      
+      &:hover,
+      &:focus {
+         > .mc-item__image {
+            transform: scale(0.4);
+         }
+      }
+   }
+}
