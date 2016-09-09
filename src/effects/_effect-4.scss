@@ -6,10 +6,12 @@
 //
 // Image ZoomOut
 .mc-item {
-   &.mc-item--effect-4 {
+   &.mc-item--effect-4,
+   &.mc-item--effect-4b,	
+	&.mc-item--effect-4c {
       > .mc-item__image {
          z-index: 2;
-         transform: scale(1);
+         transform: translate(0, 0) scale(1);
       }
       > .mc-item__caption {
          z-index: -1;
@@ -23,8 +25,26 @@
       &:hover,
       &:focus {
          > .mc-item__image {
-            transform: scale(0.4);
+            transform: translate(0, 0) scale(0.4);
          }
       }
    }
+
+	&.mc-item--effect-4b {
+		&:hover,
+      &:focus {
+         > .mc-item__image {
+            transform: translate(0, -20%) scale(0.4);
+         }
+      }
+	}
+
+	&.mc-item--effect-4c {
+		&:hover,
+      &:focus {
+         > .mc-item__image {
+            transform: translate(0, 20%) scale(0.4);
+         }
+      }
+	}
 }
