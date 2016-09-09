@@ -13,7 +13,7 @@ Wait please
 ```
 
 ## Basic Usage
-1. Include the stylesheet on your document's:
+1. Include the stylesheet on your document's:  
 Responsive file:
 ```
 <head>
@@ -45,22 +45,22 @@ Example:
 </figure>
 ```
 3. Finally you need to add one of the following class:
-- `mc-item--effect-1`
-- `mc-item--effect-2`
-- `mc-item--effect-2b`
-- `mc-item--effect-2c`
-- `mc-item--effect-2d`
-- `mc-item--effect-3`
-- `mc-item--effect-3b`
-- `mc-item--effect-3c`
-- `mc-item--effect-3d`
-- `mc-item--effect-4`
-- `mc-item--effect-4b`
-- `mc-item--effect-4c`
-- `mc-item--effect-5`
-- `mc-item--effect-5b`
-- `mc-item--effect-5c`
-- `mc-item--effect-5d`
+* `mc-item--effect-1`
+* `mc-item--effect-2`
+	* `mc-item--effect-2b`
+	* `mc-item--effect-2c`
+	* `mc-item--effect-2d`
+* `mc-item--effect-3`
+	* `mc-item--effect-3b`
+	* `mc-item--effect-3c`
+	* `mc-item--effect-3d`
+* `mc-item--effect-4`
+	* `mc-item--effect-4b`
+	* `mc-item--effect-4c`
+* `mc-item--effect-5`
+	* `mc-item--effect-5b`
+	* `mc-item--effect-5c`
+	* `mc-item--effect-5d`
 Example:
 ```
 <figure class="mc-item mc-item--effect-2b">
