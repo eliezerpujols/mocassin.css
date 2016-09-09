@@ -64,7 +64,8 @@ Wait please
 		* `mc-item--effect-5b`
 		* `mc-item--effect-5c`
 		* `mc-item--effect-5d`
-
+		
+	Example:
 	```
 	<figure class="mc-item mc-item--effect-2b">
 		<img class="mc-item__image" src="..." alt="...">
@@ -76,11 +77,15 @@ Wait please
 
 ## Custom Builds
 Mocassin.css is powered by [Gulp](http://gulpjs.com/), and you can create custom buils. First you'll need Gulp and other dependencies:
-`$ cd path/to/mocassin.css/`
-`$ sudo npm install`
+```
+$ cd path/to/mocassin.css/
+$ sudo npm install
+```
 
 Now, you can eliminate in `mocassin.scss` or `mocassin-nr.scss` those effects that do not want, and then run with:
-`$ gulp createCSS`
+```
+$ gulp createCSS
+```
 
 ## Contributing 
 I only have two rules for submitting a pull request: match the naming convention: [BEM](https://en.bem.info/methodology/), and let us see a demo of submitted effects in CodePen.
