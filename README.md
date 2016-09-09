@@ -13,63 +13,66 @@ Wait please
 ```
 
 ## Basic Usage
-1. Include the stylesheet on your document's:  
-Responsive file:
-```
-<head>
-	...
-	<link rel="stylesheet" href="mocassin.css"> <!-- Or *.min.css -->
-	...
-</head>
-```
-Non-responsive file:
-```
-<head>
-	...
-	<link rel="stylesheet" href="mocassin-nr.css"> <!-- Or *.min.css -->
-	...
-</head>
-```
-Or use version hosted by CDNJS:
-```
-Wait please
-```
+1. Include the stylesheet on your document's:
+	Responsive file:
+	```
+	<head>
+		...
+		<link rel="stylesheet" href="mocassin.css"> <!-- Or *.min.css -->
+		...
+	</head>
+	```
+	Non-responsive file:
+	```
+	<head>
+		...
+		<link rel="stylesheet" href="mocassin-nr.css"> <!-- Or *.min.css -->
+		...
+	</head>
+	```
+	Or use version hosted by CDNJS:
+	```
+	Wait please
+	```
+
 2. Add class `mc-item` to the main, `mc-item__image` to the `<img ...>` element, and `mc-item__caption` to the content caption.
-Example:
-```
-<figure class="mc-item">
-	<img class="mc-item__image" src="..." alt="...">
-	<figcaption class="mc-item__caption">
-		<h3>This is my content!</h3>
-	</figcaption>
-</figure>
-```
+	Example:
+	```
+	<figure class="mc-item">
+		<img class="mc-item__image" src="..." alt="...">
+		<figcaption class="mc-item__caption">
+			<h3>This is my content!</h3>
+		</figcaption>
+	</figure>
+	```
+
 3. Finally you need to add one of the following class:
-* `mc-item--effect-1`
-* `mc-item--effect-2`
-	* `mc-item--effect-2b`
-	* `mc-item--effect-2c`
-	* `mc-item--effect-2d`
-* `mc-item--effect-3`
-	* `mc-item--effect-3b`
-	* `mc-item--effect-3c`
-	* `mc-item--effect-3d`
-* `mc-item--effect-4`
-	* `mc-item--effect-4b`
-	* `mc-item--effect-4c`
-* `mc-item--effect-5`
-	* `mc-item--effect-5b`
-	* `mc-item--effect-5c`
-	* `mc-item--effect-5d`
-Example:
-```
-<figure class="mc-item mc-item--effect-2b">
-	<img class="mc-item__image" src="..." alt="...">
-	<figcaption class="mc-item__caption">
-		<h3>This is my content!</h3>
-	</figcaption>
-</figure>
-```
+
+	* `mc-item--effect-1`
+	* `mc-item--effect-2`
+		* `mc-item--effect-2b`
+		* `mc-item--effect-2c`
+		* `mc-item--effect-2d`
+	* `mc-item--effect-3`
+		* `mc-item--effect-3b`
+		* `mc-item--effect-3c`
+		* `mc-item--effect-3d`
+	* `mc-item--effect-4`
+		* `mc-item--effect-4b`
+		* `mc-item--effect-4c`
+	* `mc-item--effect-5`
+		* `mc-item--effect-5b`
+		* `mc-item--effect-5c`
+		* `mc-item--effect-5d`
+
+	```
+	<figure class="mc-item mc-item--effect-2b">
+		<img class="mc-item__image" src="..." alt="...">
+		<figcaption class="mc-item__caption">
+			<h3>This is my content!</h3>
+		</figcaption>
+	</figure>
+	```
 
 ## Custom Builds
 Mocassin.css is powered by [Gulp](http://gulpjs.com/), and you can create custom buils. First you'll need Gulp and other dependencies:
