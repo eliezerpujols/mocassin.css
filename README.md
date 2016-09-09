@@ -30,10 +30,6 @@ Wait please
 		...
 	</head>
 	```
-	Or use version hosted by CDNJS:
-	```
-	Wait please
-	```
 
 2. Add class `mc-item` to the main, `mc-item__image` to the `<img ...>` element, and `mc-item__caption` to the content caption.
 	Example:
