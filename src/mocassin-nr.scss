@@ -8,10 +8,6 @@
 // SETTING
 // ====================================
 //
-// BreakPoints
-$break-small: 'min-width: 480px';
-$break-medium: 'min-width: 480px';
-
 // Global Timing Functions
 $g-timing-function: ease;
 
@@ -49,12 +45,8 @@ $g-timing-function: ease;
 //
 // Import all caption effects.
 // You can remove the import rules for effects you don't want.
-
-// Break this effects in a mobile or tablet
-@media ($break-small) {
-   @import "effects/effect-1";
-   @import "effects/effect-2";
-   @import "effects/effect-3";
-   @import "effects/effect-4";
-   @import "effects/effect-5";
-}
+@import "effects/effect-1";
+@import "effects/effect-2";
+@import "effects/effect-3";
+@import "effects/effect-4";
+@import "effects/effect-5";

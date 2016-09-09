@@ -2,7 +2,7 @@
   "name": "mocassin.css",
   "version": "1.0.0",
   "description": "It's a collection of hover effects for captions.",
-  "main": "gulpfile.js",
+  "main": "mocassin.css",
   "author": "Eliezer Pujols (Wideckop)",
   "license": "MIT",
   "devDependencies": {
