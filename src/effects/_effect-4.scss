@@ -1,0 +1,50 @@
+/* -------------------------
+   Effect 4
+---------------------------- */
+
+// IN THIS EFFECT:
+//
+// Image ZoomOut
+.mc-item {
+   &.mc-item--effect-4,
+   &.mc-item--effect-4b,	
+	&.mc-item--effect-4c {
+      > .mc-item__image {
+         z-index: 2;
+         transform: translate(0, 0) scale(1);
+      }
+      > .mc-item__caption {
+         z-index: -1;
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+      }
+      
+      &:hover,
+      &:focus {
+         > .mc-item__image {
+            transform: translate(0, 0) scale(0.4);
+         }
+      }
+   }
+
+	&.mc-item--effect-4b {
+		&:hover,
+      &:focus {
+         > .mc-item__image {
+            transform: translate(0, -20%) scale(0.4);
+         }
+      }
+	}
+
+	&.mc-item--effect-4c {
+		&:hover,
+      &:focus {
+         > .mc-item__image {
+            transform: translate(0, 20%) scale(0.4);
+         }
+      }
+	}
+}

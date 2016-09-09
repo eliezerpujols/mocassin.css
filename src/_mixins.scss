@@ -1,5 +1,4 @@
 // MIXINS FOR: BREAKPOINT
-
 @mixin breakpoint($break) {
    @if($break == true) {
          @media (min-width: 480px) {@content;}
@@ -8,33 +7,13 @@
    }
 }
 
-// MIXINS FOR: 'sliding-*'
-
-@mixin sliding($x, $y) {
+// MIXINS FOR: effect-5*
+@mixin effect-5($x, $y) {
    &:hover,
    &:focus {
-      > .mc-item__image {
+      > .mc-item__caption {
+         transition-delay: 0.2s;
          transform: translate($x, $y);
-      }
-   }
-}
-
-// MIXINS FOR: 'rotating-*'
-
-@mixin rotatingX($x) {
-   &:hover,
-   &:focus {
-      > .mc-item__image {
-         transform: rotateX($x);
-      }
-   }
-}
-
-@mixin rotatingY($y) {
-   &:hover,
-   &:focus {
-      > .mc-item__image {
-         transform: rotateY($y);
       }
    }
 }

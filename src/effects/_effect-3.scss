@@ -1,0 +1,58 @@
+/* -------------------------
+   Effect 3
+---------------------------- */
+
+// IN THIS EFFECT:
+//
+// Sliding Caption and Zoom Image
+.mc-item {
+   &.mc-item--effect-3,
+   &.mc-item--effect-3b,
+   &.mc-item--effect-3c,
+   &.mc-item--effect-3d {
+      overflow: hidden;
+      > .mc-item__image {
+         transform: scale(1);
+      }
+      > .mc-item__caption {
+         position: absolute;
+         left: 0;
+         width: 100%;
+      }
+
+      &:hover,
+      &:focus {
+         > .mc-item__image {
+            transform: scale(1.5);
+         }
+         > .mc-item__caption {
+            transform: translateY(0);
+         }
+      }
+   }
+
+   &.mc-item--effect-3b,
+   &.mc-item--effect-3d {
+      > .mc-item__caption {
+         height: 100%;
+      }
+   }
+
+   // From Bottom to Top
+   &.mc-item--effect-3,
+   &.mc-item--effect-3b {
+      > .mc-item__caption {
+         bottom: 0;
+         transform: translateY(100%);
+      }
+   }
+
+   // From Top to Bottom
+   &.mc-item--effect-3c,
+   &.mc-item--effect-3d {
+      > .mc-item__caption {
+         top: 0;
+         transform: translateY(-100%);
+      }
+   }
+}

@@ -1,0 +1,28 @@
+/* -------------------------
+   Effect 1
+---------------------------- */
+
+// IN THIS EFFECT:
+//
+// FadeIn and Translate
+.mc-item {
+   &.mc-item--effect-1 {
+      > .mc-item__caption {
+         position: absolute;
+         top: 0;
+         left: 0;
+         opacity: 0;
+         transform: translate(0, 0);
+         width: 100%;
+         height: 100%;
+      }
+
+      &:hover,
+      &:focus {
+         > .mc-item__caption {
+            opacity: 1;
+            transform: translate(1em, 1em);
+         }
+      }
+   }
+}
