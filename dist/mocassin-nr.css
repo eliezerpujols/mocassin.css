@@ -26,6 +26,10 @@
   width: 100%;
 }
 
+.mc-item .mc-item__caption {
+  background-color: #7f8c8d;
+}
+
 /* -------------------------
    Effect 1
 ---------------------------- */
