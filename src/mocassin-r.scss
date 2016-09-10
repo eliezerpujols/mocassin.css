@@ -1,5 +1,5 @@
 /*!
-   Mocassin CSS v1.0.0
+   Mocassin CSS v1.2.0
    Licensed under the MIT license - http://opensource.org/licenses/MIT
 
    Copyright (c) 2016 Eliezer Pujols (Wideckop)
@@ -8,14 +8,12 @@
 // SETTING
 // ====================================
 //
+// Breakpoints
+$break-small: 'min-width: 30em';
+$break-medium: 'min-width: 48em';
+
 // Global Timing Functions
 $g-timing-function: ease;
-
-// MIXINS
-// ====================================
-//
-// Import mixins for the caption effects.
-@import "mixins";
 
 // BASE STYLES
 // ====================================
@@ -48,8 +46,12 @@ $g-timing-function: ease;
 //
 // Import all caption effects.
 // You can remove the import rules for effects you don't want.
-@import "effects/effect-1";
-@import "effects/effect-2";
-@import "effects/effect-3";
-@import "effects/effect-4";
-@import "effects/effect-5";
+
+// The caption does not hide in small screen
+@media ($break-small) {
+	@import "effects/effect-1";
+	@import "effects/effect-2";
+	@import "effects/effect-3";
+	@import "effects/effect-4";
+	@import "effects/effect-5";
+}

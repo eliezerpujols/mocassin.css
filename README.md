@@ -1,5 +1,5 @@
 # Mocassin.css
-Mocassin.css is a collection of hover effects for Captions, powered by [Sass](http://sass-lang.com/).
+Mocassin.css is a responsive collection of hover effects for Captions, powered by [Sass](http://sass-lang.com/). Each caption is adapt the size of the image.
 
 ## Installation
 The production code is inside of `dist` folder, you can install it via npm:
@@ -14,22 +14,30 @@ Wait please
 
 ## Basic Usage
 1. Include the stylesheet on your document's:
-	Responsive file:
-	```
-	<head>
-		...
-		<link rel="stylesheet" href="mocassin.css"> <!-- Or *.min.css -->
-		...
-	</head>
-	```
+
 	Non-responsive file:
 	```
 	<head>
 		...
-		<link rel="stylesheet" href="mocassin-nr.css"> <!-- Or *.min.css -->
+		<link rel="stylesheet" href="css/mocassin.css"> <!-- Or *.min.css -->
 		...
 	</head>
 	```
+	Responsive file (The caption does not hide in small screen):
+	```
+	<head>
+		...
+		<link rel="stylesheet" href="css/mocassin-r.css"> <!-- Or *.min.css -->
+		...
+	</head>
+	```
+	For touch event on touch screens, add:
+	<body>
+		...
+		...		
+		<script src="js/mocassin.js"></script> <!-- Or *.min.js -->
+	</body>
+
 
 2. Add class `mc-item` to the main, `mc-item__image` to the `<img ...>` element, and `mc-item__caption` to the content caption.
 	Example:
@@ -78,7 +86,7 @@ $ cd path/to/mocassin.css/
 $ sudo npm install
 ```
 
-Now, you can eliminate in `mocassin.scss` or `mocassin-nr.scss` those effects that do not want, and then run with:
+Now, you can eliminate in `mocassin.scss` or `mocassin-r.scss` those effects that do not want, and then run with:
 ```
 $ gulp createCSS
 ```

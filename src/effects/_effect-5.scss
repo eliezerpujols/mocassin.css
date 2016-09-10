@@ -23,7 +23,7 @@
       }
 
       &:hover,
-      &:focus {
+      &.touch {
          > .mc-item__image {
             transform: scale(0.5);
          }
@@ -34,7 +34,13 @@
    &.mc-item--effect-5b,
    &.mc-item--effect-5c,
    &.mc-item--effect-5d {
-      @include effect-5(0, 0);
+		&:hover,
+		&.touch {
+			> .mc-item__caption {
+				transition-delay: 0.2s;
+				transform: translate(0, 0);
+			}
+		}
    }
 
    // Scale and Translate in X

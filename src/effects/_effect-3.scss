@@ -21,7 +21,7 @@
       }
 
       &:hover,
-      &:focus {
+      &.touch {
          > .mc-item__image {
             transform: scale(1.5);
          }

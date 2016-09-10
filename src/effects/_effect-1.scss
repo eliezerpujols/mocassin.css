@@ -18,7 +18,7 @@
       }
 
       &:hover,
-      &:focus {
+      &.touch {
          > .mc-item__caption {
             opacity: 1;
             transform: translate(1em, 1em);
