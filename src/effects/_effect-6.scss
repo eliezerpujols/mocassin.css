@@ -1,0 +1,56 @@
+/* -------------------------
+   Effect 6
+---------------------------- */
+
+// IN THIS EFFECT:
+//
+// Translate Image
+.mc-item {
+   &.mc-item--effect-6,
+   &.mc-item--effect-6b {		
+		overflow: hidden;
+		> .mc-item__image {
+			transform: translateX(0)
+		}
+      > .mc-item__caption {
+         position: absolute;
+         top: 0;
+         width: 50%;
+         height: 100%;
+      }
+		&:hover,
+      &.touch {
+			> .mc-item__caption {
+				transform: translateX(0);
+			}
+      }
+   }
+
+	// Left to Right
+	&.mc-item--effect-6 {	
+		> .mc-item__caption {
+			left: 0;
+			transform: translateX(-100%);
+      }		
+		&:hover,
+      &.touch {
+			.mc-item__image {
+				transform: translateX(50%);				
+			}
+      }
+	}
+
+	// Right to Left
+	&.mc-item--effect-6b {	
+		> .mc-item__caption {
+			right: 0;
+			transform: translateX(100%);
+      }		
+		&:hover,
+      &.touch {
+			.mc-item__image {
+				transform: translateX(-50%);				
+			}
+      }
+	}
+}
