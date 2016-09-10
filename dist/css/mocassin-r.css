@@ -1,5 +1,5 @@
 /*!
-   Mocassin CSS v1.0.0
+   Mocassin CSS v1.2.0
    Licensed under the MIT license - http://opensource.org/licenses/MIT
 
    Copyright (c) 2016 Eliezer Pujols (Wideckop)
@@ -30,7 +30,7 @@
   background-color: #7f8c8d;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 30em) {
   /* -------------------------
    Effect 1
 ---------------------------- */
@@ -44,7 +44,7 @@
     width: 100%;
     height: 100%;
   }
-  .mc-item.mc-item--effect-1:hover > .mc-item__caption, .mc-item.mc-item--effect-1:focus > .mc-item__caption {
+  .mc-item.mc-item--effect-1:hover > .mc-item__caption, .mc-item.mc-item--effect-1.touch > .mc-item__caption {
     opacity: 1;
     -webkit-transform: translate(1em, 1em);
     transform: translate(1em, 1em);
@@ -64,7 +64,7 @@
     left: 0;
     width: 100%;
   }
-  .mc-item.mc-item--effect-2:hover > .mc-item__caption, .mc-item.mc-item--effect-2:focus > .mc-item__caption, .mc-item.mc-item--effect-2b:hover > .mc-item__caption, .mc-item.mc-item--effect-2b:focus > .mc-item__caption, .mc-item.mc-item--effect-2c:hover > .mc-item__caption, .mc-item.mc-item--effect-2c:focus > .mc-item__caption, .mc-item.mc-item--effect-2d:hover > .mc-item__caption, .mc-item.mc-item--effect-2d:focus > .mc-item__caption {
+  .mc-item.mc-item--effect-2:hover > .mc-item__caption, .mc-item.mc-item--effect-2.touch > .mc-item__caption, .mc-item.mc-item--effect-2b:hover > .mc-item__caption, .mc-item.mc-item--effect-2b.touch > .mc-item__caption, .mc-item.mc-item--effect-2c:hover > .mc-item__caption, .mc-item.mc-item--effect-2c.touch > .mc-item__caption, .mc-item.mc-item--effect-2d:hover > .mc-item__caption, .mc-item.mc-item--effect-2d.touch > .mc-item__caption {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
@@ -76,7 +76,7 @@
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
   }
-  .mc-item.mc-item--effect-2:hover > .mc-item__image, .mc-item.mc-item--effect-2:focus > .mc-item__image, .mc-item.mc-item--effect-2b:hover > .mc-item__image, .mc-item.mc-item--effect-2b:focus > .mc-item__image {
+  .mc-item.mc-item--effect-2:hover > .mc-item__image, .mc-item.mc-item--effect-2.touch > .mc-item__image, .mc-item.mc-item--effect-2b:hover > .mc-item__image, .mc-item.mc-item--effect-2b.touch > .mc-item__image {
     -webkit-transform: translateY(-2em);
     transform: translateY(-2em);
   }
@@ -85,7 +85,7 @@
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
   }
-  .mc-item.mc-item--effect-2c:hover > .mc-item__image, .mc-item.mc-item--effect-2c:focus > .mc-item__image, .mc-item.mc-item--effect-2d:hover > .mc-item__image, .mc-item.mc-item--effect-2d:focus > .mc-item__image {
+  .mc-item.mc-item--effect-2c:hover > .mc-item__image, .mc-item.mc-item--effect-2c.touch > .mc-item__image, .mc-item.mc-item--effect-2d:hover > .mc-item__image, .mc-item.mc-item--effect-2d.touch > .mc-item__image {
     -webkit-transform: translateY(2em);
     transform: translateY(2em);
   }
@@ -104,11 +104,11 @@
     left: 0;
     width: 100%;
   }
-  .mc-item.mc-item--effect-3:hover > .mc-item__image, .mc-item.mc-item--effect-3:focus > .mc-item__image, .mc-item.mc-item--effect-3b:hover > .mc-item__image, .mc-item.mc-item--effect-3b:focus > .mc-item__image, .mc-item.mc-item--effect-3c:hover > .mc-item__image, .mc-item.mc-item--effect-3c:focus > .mc-item__image, .mc-item.mc-item--effect-3d:hover > .mc-item__image, .mc-item.mc-item--effect-3d:focus > .mc-item__image {
+  .mc-item.mc-item--effect-3:hover > .mc-item__image, .mc-item.mc-item--effect-3.touch > .mc-item__image, .mc-item.mc-item--effect-3b:hover > .mc-item__image, .mc-item.mc-item--effect-3b.touch > .mc-item__image, .mc-item.mc-item--effect-3c:hover > .mc-item__image, .mc-item.mc-item--effect-3c.touch > .mc-item__image, .mc-item.mc-item--effect-3d:hover > .mc-item__image, .mc-item.mc-item--effect-3d.touch > .mc-item__image {
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
   }
-  .mc-item.mc-item--effect-3:hover > .mc-item__caption, .mc-item.mc-item--effect-3:focus > .mc-item__caption, .mc-item.mc-item--effect-3b:hover > .mc-item__caption, .mc-item.mc-item--effect-3b:focus > .mc-item__caption, .mc-item.mc-item--effect-3c:hover > .mc-item__caption, .mc-item.mc-item--effect-3c:focus > .mc-item__caption, .mc-item.mc-item--effect-3d:hover > .mc-item__caption, .mc-item.mc-item--effect-3d:focus > .mc-item__caption {
+  .mc-item.mc-item--effect-3:hover > .mc-item__caption, .mc-item.mc-item--effect-3.touch > .mc-item__caption, .mc-item.mc-item--effect-3b:hover > .mc-item__caption, .mc-item.mc-item--effect-3b.touch > .mc-item__caption, .mc-item.mc-item--effect-3c:hover > .mc-item__caption, .mc-item.mc-item--effect-3c.touch > .mc-item__caption, .mc-item.mc-item--effect-3d:hover > .mc-item__caption, .mc-item.mc-item--effect-3d.touch > .mc-item__caption {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
@@ -142,15 +142,15 @@
     width: 100%;
     height: 100%;
   }
-  .mc-item.mc-item--effect-4:hover > .mc-item__image, .mc-item.mc-item--effect-4:focus > .mc-item__image, .mc-item.mc-item--effect-4b:hover > .mc-item__image, .mc-item.mc-item--effect-4b:focus > .mc-item__image, .mc-item.mc-item--effect-4c:hover > .mc-item__image, .mc-item.mc-item--effect-4c:focus > .mc-item__image {
+  .mc-item.mc-item--effect-4:hover > .mc-item__image, .mc-item.mc-item--effect-4.touch > .mc-item__image, .mc-item.mc-item--effect-4b:hover > .mc-item__image, .mc-item.mc-item--effect-4b.touch > .mc-item__image, .mc-item.mc-item--effect-4c:hover > .mc-item__image, .mc-item.mc-item--effect-4c.touch > .mc-item__image {
     -webkit-transform: translate(0, 0) scale(0.4);
     transform: translate(0, 0) scale(0.4);
   }
-  .mc-item.mc-item--effect-4b:hover > .mc-item__image, .mc-item.mc-item--effect-4b:focus > .mc-item__image {
+  .mc-item.mc-item--effect-4b:hover > .mc-item__image, .mc-item.mc-item--effect-4b.touch > .mc-item__image {
     -webkit-transform: translate(0, -20%) scale(0.4);
     transform: translate(0, -20%) scale(0.4);
   }
-  .mc-item.mc-item--effect-4c:hover > .mc-item__image, .mc-item.mc-item--effect-4c:focus > .mc-item__image {
+  .mc-item.mc-item--effect-4c:hover > .mc-item__image, .mc-item.mc-item--effect-4c.touch > .mc-item__image {
     -webkit-transform: translate(0, 20%) scale(0.4);
     transform: translate(0, 20%) scale(0.4);
   }
@@ -171,11 +171,11 @@
     width: 100%;
     height: 100%;
   }
-  .mc-item.mc-item--effect-5:hover > .mc-item__image, .mc-item.mc-item--effect-5:focus > .mc-item__image, .mc-item.mc-item--effect-5b:hover > .mc-item__image, .mc-item.mc-item--effect-5b:focus > .mc-item__image, .mc-item.mc-item--effect-5c:hover > .mc-item__image, .mc-item.mc-item--effect-5c:focus > .mc-item__image, .mc-item.mc-item--effect-5d:hover > .mc-item__image, .mc-item.mc-item--effect-5d:focus > .mc-item__image {
+  .mc-item.mc-item--effect-5:hover > .mc-item__image, .mc-item.mc-item--effect-5.touch > .mc-item__image, .mc-item.mc-item--effect-5b:hover > .mc-item__image, .mc-item.mc-item--effect-5b.touch > .mc-item__image, .mc-item.mc-item--effect-5c:hover > .mc-item__image, .mc-item.mc-item--effect-5c.touch > .mc-item__image, .mc-item.mc-item--effect-5d:hover > .mc-item__image, .mc-item.mc-item--effect-5d.touch > .mc-item__image {
     -webkit-transform: scale(0.5);
     transform: scale(0.5);
   }
-  .mc-item.mc-item--effect-5:hover > .mc-item__caption, .mc-item.mc-item--effect-5:focus > .mc-item__caption, .mc-item.mc-item--effect-5b:hover > .mc-item__caption, .mc-item.mc-item--effect-5b:focus > .mc-item__caption, .mc-item.mc-item--effect-5c:hover > .mc-item__caption, .mc-item.mc-item--effect-5c:focus > .mc-item__caption, .mc-item.mc-item--effect-5d:hover > .mc-item__caption, .mc-item.mc-item--effect-5d:focus > .mc-item__caption {
+  .mc-item.mc-item--effect-5:hover > .mc-item__caption, .mc-item.mc-item--effect-5.touch > .mc-item__caption, .mc-item.mc-item--effect-5b:hover > .mc-item__caption, .mc-item.mc-item--effect-5b.touch > .mc-item__caption, .mc-item.mc-item--effect-5c:hover > .mc-item__caption, .mc-item.mc-item--effect-5c.touch > .mc-item__caption, .mc-item.mc-item--effect-5d:hover > .mc-item__caption, .mc-item.mc-item--effect-5d.touch > .mc-item__caption {
     -webkit-transition-delay: 0.2s;
     transition-delay: 0.2s;
     -webkit-transform: translate(0, 0);

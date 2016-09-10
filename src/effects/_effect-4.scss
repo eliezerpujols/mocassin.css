@@ -24,7 +24,7 @@
       }
       
       &:hover,
-      &:focus {
+      &.touch {
          > .mc-item__image {
             transform: translate(0, 0) scale(0.4);
          }
@@ -33,7 +33,7 @@
 
 	&.mc-item--effect-4b {
 		&:hover,
-      &:focus {
+      &.touch {
          > .mc-item__image {
             transform: translate(0, -20%) scale(0.4);
          }
@@ -42,7 +42,7 @@
 
 	&.mc-item--effect-4c {
 		&:hover,
-      &:focus {
+      &.touch {
          > .mc-item__image {
             transform: translate(0, 20%) scale(0.4);
          }

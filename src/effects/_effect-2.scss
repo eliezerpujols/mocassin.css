@@ -21,7 +21,7 @@
       }
       
       &:hover,
-      &:focus {
+      &.touch {
          > .mc-item__caption {
             transform: translateY(0);
          }
@@ -43,7 +43,7 @@
          transform: translateY(100%);
       }
       &:hover,
-      &:focus {
+      &.touch {
          > .mc-item__image {
             transform: translateY(-2em);
          }
@@ -58,7 +58,7 @@
          transform: translateY(-100%);
       }
       &:hover,
-      &:focus {
+      &.touch {
          > .mc-item__image {
             transform: translateY(2em);
          }
