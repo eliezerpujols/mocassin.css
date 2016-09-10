@@ -11,10 +11,11 @@
 	&.mc-item--effect-4c {
       > .mc-item__image {
          z-index: 2;
+			position: relative;
          transform: translate(0, 0) scale(1);
       }
       > .mc-item__caption {
-         z-index: -1;
+         z-index: 0;
          position: absolute;
          top: 0;
          left: 0;
