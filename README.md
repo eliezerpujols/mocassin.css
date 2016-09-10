@@ -32,12 +32,13 @@ Wait please
 	</head>
 	```
 	For touch event on touch screens, add:
+	```
 	<body>
 		...
 		...		
 		<script src="js/mocassin.js"></script> <!-- Or *.min.js -->
 	</body>
-
+	```
 
 2. Add class `mc-item` to the main, `mc-item__image` to the `<img ...>` element, and `mc-item__caption` to the content caption.
 	Example:
