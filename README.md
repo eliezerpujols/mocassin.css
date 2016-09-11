@@ -19,7 +19,7 @@ Wait please
 1. Include the stylesheet on your document's:
 
 	Non-responsive file:
-	
+
 	```html
 	<head>
 		...
@@ -27,9 +27,9 @@ Wait please
 		...
 	</head>
 	```
-	
+
 	Responsive file (The caption does not hide in small screen):
-	
+
 	```html
 	<head>
 		...
@@ -37,9 +37,9 @@ Wait please
 		...
 	</head>
 	```
-	
+
 	For touch event on touch screens, add:
-	
+
 	```html
 	<body>
 		...
@@ -50,7 +50,7 @@ Wait please
 
 2. Add class `mc-item` to the main, `mc-item__image` to the `<img ...>` element, and `mc-item__caption` to the content caption.
 	Example:
-   
+
 	```html
 	<figure class="mc-item">
 		<img class="mc-item__image" src="..." alt="...">
@@ -82,7 +82,7 @@ Wait please
 		* `mc-item--effect-6b`
 
 	Example:
-	```
+	```html
 	<figure class="mc-item mc-item--effect-2b">
 		<img class="mc-item__image" src="..." alt="...">
 		<figcaption class="mc-item__caption">
@@ -93,7 +93,7 @@ Wait please
 
 ## Custom Builds
 
-Mocassin.css is powered by [Gulp](http://gulpjs.com/), and you can create custom buils. First you'll need Gulp and other dependencies:
+Mocassin.css is powered by [Gulp](http://gulpjs.com/), and you can create custom builds. First you'll need Gulp and other dependencies:
 
 ```bash
 $ cd path/to/mocassin.css/
@@ -108,7 +108,7 @@ $ gulp createCSS
 
 ## Contributing
 
-I only have two rules for submitting a pull request: match the naming convention: [BEM](https://en.bem.info/methodology/), and let us see a demo of submitted effects in CodePen.
+I only have three rules for submitting a pull request: 1- match the naming convention: [BEM](https://en.bem.info/methodology/), 2- and let us see a demo of submitted effects in CodePen, 3- The PR must aim to `develop` branch and not to `master` branch. The branch of the feature must be started as `feature/feature-name` .
 
 ## License
 
