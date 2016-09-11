@@ -1,7 +1,9 @@
 # Mocassin.css
+
 Mocassin.css is a responsive collection of hover effects for Captions, powered by [Sass](http://sass-lang.com/). Each caption is adapt the size of the image.
 
 ## Installation
+
 The production code is inside of `dist` folder, you can install it via npm:
 ```
 Wait please
@@ -13,26 +15,32 @@ Wait please
 ```
 
 ## Basic Usage
+
 1. Include the stylesheet on your document's:
 
 	Non-responsive file:
-	```
+	
+	```html
 	<head>
 		...
 		<link rel="stylesheet" href="css/mocassin.css"> <!-- Or *.min.css -->
 		...
 	</head>
 	```
+	
 	Responsive file (The caption does not hide in small screen):
-	```
+	
+	```html
 	<head>
 		...
 		<link rel="stylesheet" href="css/mocassin-r.css"> <!-- Or *.min.css -->
 		...
 	</head>
 	```
+	
 	For touch event on touch screens, add:
-	```
+	
+	```html
 	<body>
 		...
 		...		
@@ -42,7 +50,8 @@ Wait please
 
 2. Add class `mc-item` to the main, `mc-item__image` to the `<img ...>` element, and `mc-item__caption` to the content caption.
 	Example:
-	```
+   
+	```html
 	<figure class="mc-item">
 		<img class="mc-item__image" src="..." alt="...">
 		<figcaption class="mc-item__caption">
@@ -83,19 +92,24 @@ Wait please
 	```
 
 ## Custom Builds
+
 Mocassin.css is powered by [Gulp](http://gulpjs.com/), and you can create custom buils. First you'll need Gulp and other dependencies:
-```
+
+```bash
 $ cd path/to/mocassin.css/
 $ sudo npm install
 ```
 
 Now, you can eliminate in `mocassin.scss` or `mocassin-r.scss` those effects that do not want, and then run with:
-```
+
+```bash
 $ gulp createCSS
 ```
 
 ## Contributing
+
 I only have two rules for submitting a pull request: match the naming convention: [BEM](https://en.bem.info/methodology/), and let us see a demo of submitted effects in CodePen.
 
 ## License
+
 Mocassin.css is licensed under the [MIT](http://opensource.org/licenses/MIT) license.
