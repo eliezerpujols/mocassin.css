@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Mocassin.css is a collection of hover effects for Captions, powered by Sass">
+      <meta name="author" content="Eliezer Pujols (Wideckop)">
+      <title>Mocassin.css</title>
+
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+
+      <!-- CSS's -->
+      <link href="assets/css/reset.min.css" rel="stylesheet">
+      <link href="assets/css/mocassin.min.css" rel="stylesheet">
+      <link href="assets/css/styles.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="demo-layout">
+
+         <!-- Header and Information -->
+         <div class="demo-layout__column">
+            <div class="demo-wrapper">
+               <header>
+                  <h1><img src="assets/img/logo.png" alt="Logo"></h1>
+                  <p>It's a collection of Hover Effects for Captions</p>
+                  <div class="demo-header__actions">
+                     <a href="assets/mocassin.css.zip" class="demo-button">Download</a>
+                     <strong>Or</strong>
+                     <a href="https://github.com/wideckop/mocassin.css" class="demo-button">View in GitHub</a>
+                  </div>
+                  <p>Installing Mocassin.css takes only seconds:<br><a href="https://github.com/wideckop/mocassin.css"><strong>Read the documentation</strong></a></p>
+               </header>
+            </div>
+         </div>
+
+         <!-- Box Effets -->
+         <div class="demo-layout__column">
+            <div class="demo-wrapper">
+               <figure id="figureEffects" class="demo-item mc-item mc-item--effect-1">
+                  <img class="mc-item__image" src="assets/img/demo-img.jpg" alt="Image Demo">
+                  <figcaption class="mc-item__caption">
+                     <h3>Title Caption</h3>
+                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                  </figcaption>
+               </figure>
+               <form>
+                  <select class="demo-input js--effects">
+                     <option value="mc-item--effect-1">Effect-1</option>
+                     <option value="mc-item--effect-2">Effect-2</option>
+                     <option value="mc-item--effect-2b">Effect-2b</option>
+                     <option value="mc-item--effect-2c">Effect-2c</option>
+                     <option value="mc-item--effect-2d">Effect-2d</option>
+                     <option value="mc-item--effect-3">Effect-3</option>
+                     <option value="mc-item--effect-3b">Effect-3b</option>
+                     <option value="mc-item--effect-3c">Effect-3c</option>
+                     <option value="mc-item--effect-3d">Effect-3d</option>
+                     <option value="mc-item--effect-4">Effect-4</option>
+                     <option value="mc-item--effect-4b">Effect-4b</option>
+                     <option value="mc-item--effect-4c">Effect-4c</option>
+                     <option value="mc-item--effect-5">Effect-5</option>
+                     <option value="mc-item--effect-5b">Effect-5b</option>
+                     <option value="mc-item--effect-5c">Effect-5c</option>
+                     <option value="mc-item--effect-5d">Effect-5d</option>
+                     <option value="mc-item--effect-6">Effect-6</option>
+                     <option value="mc-item--effect-6b">Effect-6b</option>
+                  </select>
+               </form>
+            </div>
+         </div>
+
+         <!-- Footer -->
+         <footer>
+            <p>Developed by <a href="https://twitter.com/wideckop"><strong>@wideckop</strong></a> - Illustrations by <a href="https://dribbble.com/jamesolstein"><strong>James Olstein</strong></a></p>
+         </footer>
+      </div>
+
+      <!-- JQuery -->
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+      <!-- Custom JS -->
+      <script>
+         function demoEffects(x) {
+            $('#figureEffects').removeClass().addClass('demo-item' + ' mc-item ' + x).one(function(){
+               $(this).removeClass();
+            });
+         };
+
+         $(document).ready(function(){
+            $('.js--effects').change(function(){
+               var eff = $(this).val();
+               demoEffects(eff);
+            });
+         });
+      </script>
+
+      <script src="assets/js/mocassin.min.js"></script>
+   </body>
+</html>
