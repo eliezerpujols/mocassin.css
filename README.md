@@ -69,7 +69,9 @@ Wait please
 		* `mc-item--effect-5b`
 		* `mc-item--effect-5c`
 		* `mc-item--effect-5d`
-		
+	* `mc-item--effect-6`
+		* `mc-item--effect-6b`
+
 	Example:
 	```
 	<figure class="mc-item mc-item--effect-2b">
@@ -92,7 +94,7 @@ Now, you can eliminate in `mocassin.scss` or `mocassin-r.scss` those effects tha
 $ gulp createCSS
 ```
 
-## Contributing 
+## Contributing
 I only have two rules for submitting a pull request: match the naming convention: [BEM](https://en.bem.info/methodology/), and let us see a demo of submitted effects in CodePen.
 
 ## License
