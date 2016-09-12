@@ -33,7 +33,7 @@
 /* -------------------------
    Effect 1
 ---------------------------- */
-.mc-item.mc-item--effect-1 > .mc-item__caption {
+.mc-item.mc-item--fadeInRightDown > .mc-item__caption {
   position: absolute;
   top: 0;
   left: 0;
@@ -44,7 +44,7 @@
   height: 100%;
 }
 
-.mc-item.mc-item--effect-1:hover > .mc-item__caption, .mc-item.mc-item--effect-1.touch > .mc-item__caption {
+.mc-item.mc-item--fadeInRightDown:hover > .mc-item__caption, .mc-item.mc-item--fadeInRightDown.touch > .mc-item__caption {
   opacity: 1;
   -webkit-transform: translate(1em, 1em);
   transform: translate(1em, 1em);
@@ -53,48 +53,48 @@
 /* -------------------------
    Effect 2
 ---------------------------- */
-.mc-item.mc-item--effect-2, .mc-item.mc-item--effect-2b, .mc-item.mc-item--effect-2c, .mc-item.mc-item--effect-2d {
+.mc-item.mc-item--slideInUp, .mc-item.mc-item--slideInUpBig, .mc-item.mc-item--slideInDown, .mc-item.mc-item--slideInDownBig {
   overflow: hidden;
 }
 
-.mc-item.mc-item--effect-2 > .mc-item__image, .mc-item.mc-item--effect-2b > .mc-item__image, .mc-item.mc-item--effect-2c > .mc-item__image, .mc-item.mc-item--effect-2d > .mc-item__image {
+.mc-item.mc-item--slideInUp > .mc-item__image, .mc-item.mc-item--slideInUpBig > .mc-item__image, .mc-item.mc-item--slideInDown > .mc-item__image, .mc-item.mc-item--slideInDownBig > .mc-item__image {
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
 
-.mc-item.mc-item--effect-2 > .mc-item__caption, .mc-item.mc-item--effect-2b > .mc-item__caption, .mc-item.mc-item--effect-2c > .mc-item__caption, .mc-item.mc-item--effect-2d > .mc-item__caption {
+.mc-item.mc-item--slideInUp > .mc-item__caption, .mc-item.mc-item--slideInUpBig > .mc-item__caption, .mc-item.mc-item--slideInDown > .mc-item__caption, .mc-item.mc-item--slideInDownBig > .mc-item__caption {
   position: absolute;
   left: 0;
   width: 100%;
 }
 
-.mc-item.mc-item--effect-2:hover > .mc-item__caption, .mc-item.mc-item--effect-2.touch > .mc-item__caption, .mc-item.mc-item--effect-2b:hover > .mc-item__caption, .mc-item.mc-item--effect-2b.touch > .mc-item__caption, .mc-item.mc-item--effect-2c:hover > .mc-item__caption, .mc-item.mc-item--effect-2c.touch > .mc-item__caption, .mc-item.mc-item--effect-2d:hover > .mc-item__caption, .mc-item.mc-item--effect-2d.touch > .mc-item__caption {
+.mc-item.mc-item--slideInUp:hover > .mc-item__caption, .mc-item.mc-item--slideInUp.touch > .mc-item__caption, .mc-item.mc-item--slideInUpBig:hover > .mc-item__caption, .mc-item.mc-item--slideInUpBig.touch > .mc-item__caption, .mc-item.mc-item--slideInDown:hover > .mc-item__caption, .mc-item.mc-item--slideInDown.touch > .mc-item__caption, .mc-item.mc-item--slideInDownBig:hover > .mc-item__caption, .mc-item.mc-item--slideInDownBig.touch > .mc-item__caption {
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
 
-.mc-item.mc-item--effect-2b > .mc-item__caption, .mc-item.mc-item--effect-2d > .mc-item__caption {
+.mc-item.mc-item--slideInUpBig > .mc-item__caption, .mc-item.mc-item--slideInDownBig > .mc-item__caption {
   height: 100%;
 }
 
-.mc-item.mc-item--effect-2 > .mc-item__caption, .mc-item.mc-item--effect-2b > .mc-item__caption {
+.mc-item.mc-item--slideInUp > .mc-item__caption, .mc-item.mc-item--slideInUpBig > .mc-item__caption {
   bottom: 0;
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
 }
 
-.mc-item.mc-item--effect-2:hover > .mc-item__image, .mc-item.mc-item--effect-2.touch > .mc-item__image, .mc-item.mc-item--effect-2b:hover > .mc-item__image, .mc-item.mc-item--effect-2b.touch > .mc-item__image {
+.mc-item.mc-item--slideInUp:hover > .mc-item__image, .mc-item.mc-item--slideInUp.touch > .mc-item__image, .mc-item.mc-item--slideInUpBig:hover > .mc-item__image, .mc-item.mc-item--slideInUpBig.touch > .mc-item__image {
   -webkit-transform: translateY(-2em);
   transform: translateY(-2em);
 }
 
-.mc-item.mc-item--effect-2c > .mc-item__caption, .mc-item.mc-item--effect-2d > .mc-item__caption {
+.mc-item.mc-item--slideInDown > .mc-item__caption, .mc-item.mc-item--slideInDownBig > .mc-item__caption {
   top: 0;
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
 }
 
-.mc-item.mc-item--effect-2c:hover > .mc-item__image, .mc-item.mc-item--effect-2c.touch > .mc-item__image, .mc-item.mc-item--effect-2d:hover > .mc-item__image, .mc-item.mc-item--effect-2d.touch > .mc-item__image {
+.mc-item.mc-item--slideInDown:hover > .mc-item__image, .mc-item.mc-item--slideInDown.touch > .mc-item__image, .mc-item.mc-item--slideInDownBig:hover > .mc-item__image, .mc-item.mc-item--slideInDownBig.touch > .mc-item__image {
   -webkit-transform: translateY(2em);
   transform: translateY(2em);
 }
@@ -102,42 +102,42 @@
 /* -------------------------
    Effect 3
 ---------------------------- */
-.mc-item.mc-item--effect-3, .mc-item.mc-item--effect-3b, .mc-item.mc-item--effect-3c, .mc-item.mc-item--effect-3d {
+.mc-item.mc-item--slideScaleInUp, .mc-item.mc-item--slideScaleInUpBig, .mc-item.mc-item--slideScaleInDown, .mc-item.mc-item--slideScaleInDownBig {
   overflow: hidden;
 }
 
-.mc-item.mc-item--effect-3 > .mc-item__image, .mc-item.mc-item--effect-3b > .mc-item__image, .mc-item.mc-item--effect-3c > .mc-item__image, .mc-item.mc-item--effect-3d > .mc-item__image {
+.mc-item.mc-item--slideScaleInUp > .mc-item__image, .mc-item.mc-item--slideScaleInUpBig > .mc-item__image, .mc-item.mc-item--slideScaleInDown > .mc-item__image, .mc-item.mc-item--slideScaleInDownBig > .mc-item__image {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
 
-.mc-item.mc-item--effect-3 > .mc-item__caption, .mc-item.mc-item--effect-3b > .mc-item__caption, .mc-item.mc-item--effect-3c > .mc-item__caption, .mc-item.mc-item--effect-3d > .mc-item__caption {
+.mc-item.mc-item--slideScaleInUp > .mc-item__caption, .mc-item.mc-item--slideScaleInUpBig > .mc-item__caption, .mc-item.mc-item--slideScaleInDown > .mc-item__caption, .mc-item.mc-item--slideScaleInDownBig > .mc-item__caption {
   position: absolute;
   left: 0;
   width: 100%;
 }
 
-.mc-item.mc-item--effect-3:hover > .mc-item__image, .mc-item.mc-item--effect-3.touch > .mc-item__image, .mc-item.mc-item--effect-3b:hover > .mc-item__image, .mc-item.mc-item--effect-3b.touch > .mc-item__image, .mc-item.mc-item--effect-3c:hover > .mc-item__image, .mc-item.mc-item--effect-3c.touch > .mc-item__image, .mc-item.mc-item--effect-3d:hover > .mc-item__image, .mc-item.mc-item--effect-3d.touch > .mc-item__image {
+.mc-item.mc-item--slideScaleInUp:hover > .mc-item__image, .mc-item.mc-item--slideScaleInUp.touch > .mc-item__image, .mc-item.mc-item--slideScaleInUpBig:hover > .mc-item__image, .mc-item.mc-item--slideScaleInUpBig.touch > .mc-item__image, .mc-item.mc-item--slideScaleInDown:hover > .mc-item__image, .mc-item.mc-item--slideScaleInDown.touch > .mc-item__image, .mc-item.mc-item--slideScaleInDownBig:hover > .mc-item__image, .mc-item.mc-item--slideScaleInDownBig.touch > .mc-item__image {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
 
-.mc-item.mc-item--effect-3:hover > .mc-item__caption, .mc-item.mc-item--effect-3.touch > .mc-item__caption, .mc-item.mc-item--effect-3b:hover > .mc-item__caption, .mc-item.mc-item--effect-3b.touch > .mc-item__caption, .mc-item.mc-item--effect-3c:hover > .mc-item__caption, .mc-item.mc-item--effect-3c.touch > .mc-item__caption, .mc-item.mc-item--effect-3d:hover > .mc-item__caption, .mc-item.mc-item--effect-3d.touch > .mc-item__caption {
+.mc-item.mc-item--slideScaleInUp:hover > .mc-item__caption, .mc-item.mc-item--slideScaleInUp.touch > .mc-item__caption, .mc-item.mc-item--slideScaleInUpBig:hover > .mc-item__caption, .mc-item.mc-item--slideScaleInUpBig.touch > .mc-item__caption, .mc-item.mc-item--slideScaleInDown:hover > .mc-item__caption, .mc-item.mc-item--slideScaleInDown.touch > .mc-item__caption, .mc-item.mc-item--slideScaleInDownBig:hover > .mc-item__caption, .mc-item.mc-item--slideScaleInDownBig.touch > .mc-item__caption {
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
 
-.mc-item.mc-item--effect-3b > .mc-item__caption, .mc-item.mc-item--effect-3d > .mc-item__caption {
+.mc-item.mc-item--slideScaleInUpBig > .mc-item__caption, .mc-item.mc-item--slideScaleInDownBig > .mc-item__caption {
   height: 100%;
 }
 
-.mc-item.mc-item--effect-3 > .mc-item__caption, .mc-item.mc-item--effect-3b > .mc-item__caption {
+.mc-item.mc-item--slideScaleInUp > .mc-item__caption, .mc-item.mc-item--slideScaleInUpBig > .mc-item__caption {
   bottom: 0;
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
 }
 
-.mc-item.mc-item--effect-3c > .mc-item__caption, .mc-item.mc-item--effect-3d > .mc-item__caption {
+.mc-item.mc-item--slideScaleInDown > .mc-item__caption, .mc-item.mc-item--slideScaleInDownBig > .mc-item__caption {
   top: 0;
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
@@ -146,14 +146,14 @@
 /* -------------------------
    Effect 4
 ---------------------------- */
-.mc-item.mc-item--effect-4 > .mc-item__image, .mc-item.mc-item--effect-4b > .mc-item__image, .mc-item.mc-item--effect-4c > .mc-item__image {
+.mc-item.mc-item--scaleOut > .mc-item__image, .mc-item.mc-item--scaleOutUp > .mc-item__image, .mc-item.mc-item--scaleOutDown > .mc-item__image {
   z-index: 2;
   position: relative;
   -webkit-transform: translate(0, 0) scale(1);
   transform: translate(0, 0) scale(1);
 }
 
-.mc-item.mc-item--effect-4 > .mc-item__caption, .mc-item.mc-item--effect-4b > .mc-item__caption, .mc-item.mc-item--effect-4c > .mc-item__caption {
+.mc-item.mc-item--scaleOut > .mc-item__caption, .mc-item.mc-item--scaleOutUp > .mc-item__caption, .mc-item.mc-item--scaleOutDown > .mc-item__caption {
   z-index: 0;
   position: absolute;
   top: 0;
@@ -162,17 +162,17 @@
   height: 100%;
 }
 
-.mc-item.mc-item--effect-4:hover > .mc-item__image, .mc-item.mc-item--effect-4.touch > .mc-item__image, .mc-item.mc-item--effect-4b:hover > .mc-item__image, .mc-item.mc-item--effect-4b.touch > .mc-item__image, .mc-item.mc-item--effect-4c:hover > .mc-item__image, .mc-item.mc-item--effect-4c.touch > .mc-item__image {
+.mc-item.mc-item--scaleOut:hover > .mc-item__image, .mc-item.mc-item--scaleOut.touch > .mc-item__image, .mc-item.mc-item--scaleOutUp:hover > .mc-item__image, .mc-item.mc-item--scaleOutUp.touch > .mc-item__image, .mc-item.mc-item--scaleOutDown:hover > .mc-item__image, .mc-item.mc-item--scaleOutDown.touch > .mc-item__image {
   -webkit-transform: translate(0, 0) scale(0.4);
   transform: translate(0, 0) scale(0.4);
 }
 
-.mc-item.mc-item--effect-4b:hover > .mc-item__image, .mc-item.mc-item--effect-4b.touch > .mc-item__image {
+.mc-item.mc-item--scaleOutUp:hover > .mc-item__image, .mc-item.mc-item--scaleOutUp.touch > .mc-item__image {
   -webkit-transform: translate(0, -20%) scale(0.4);
   transform: translate(0, -20%) scale(0.4);
 }
 
-.mc-item.mc-item--effect-4c:hover > .mc-item__image, .mc-item.mc-item--effect-4c.touch > .mc-item__image {
+.mc-item.mc-item--scaleOutDown:hover > .mc-item__image, .mc-item.mc-item--scaleOutDown.touch > .mc-item__image {
   -webkit-transform: translate(0, 20%) scale(0.4);
   transform: translate(0, 20%) scale(0.4);
 }
@@ -180,16 +180,16 @@
 /* -------------------------
    Effect 5
 ---------------------------- */
-.mc-item.mc-item--effect-5, .mc-item.mc-item--effect-5b, .mc-item.mc-item--effect-5c, .mc-item.mc-item--effect-5d {
+.mc-item.mc-item--slideScaleOutUp, .mc-item.mc-item--slideScaleOutDown, .mc-item.mc-item--slideScaleOutLeft, .mc-item.mc-item--slideScaleOutRight {
   overflow: hidden;
 }
 
-.mc-item.mc-item--effect-5 > .mc-item__image, .mc-item.mc-item--effect-5b > .mc-item__image, .mc-item.mc-item--effect-5c > .mc-item__image, .mc-item.mc-item--effect-5d > .mc-item__image {
+.mc-item.mc-item--slideScaleOutUp > .mc-item__image, .mc-item.mc-item--slideScaleOutDown > .mc-item__image, .mc-item.mc-item--slideScaleOutLeft > .mc-item__image, .mc-item.mc-item--slideScaleOutRight > .mc-item__image {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
 
-.mc-item.mc-item--effect-5 > .mc-item__caption, .mc-item.mc-item--effect-5b > .mc-item__caption, .mc-item.mc-item--effect-5c > .mc-item__caption, .mc-item.mc-item--effect-5d > .mc-item__caption {
+.mc-item.mc-item--slideScaleOutUp > .mc-item__caption, .mc-item.mc-item--slideScaleOutDown > .mc-item__caption, .mc-item.mc-item--slideScaleOutLeft > .mc-item__caption, .mc-item.mc-item--slideScaleOutRight > .mc-item__caption {
   position: absolute;
   top: 0;
   left: 0;
@@ -197,80 +197,80 @@
   height: 100%;
 }
 
-.mc-item.mc-item--effect-5:hover > .mc-item__image, .mc-item.mc-item--effect-5.touch > .mc-item__image, .mc-item.mc-item--effect-5b:hover > .mc-item__image, .mc-item.mc-item--effect-5b.touch > .mc-item__image, .mc-item.mc-item--effect-5c:hover > .mc-item__image, .mc-item.mc-item--effect-5c.touch > .mc-item__image, .mc-item.mc-item--effect-5d:hover > .mc-item__image, .mc-item.mc-item--effect-5d.touch > .mc-item__image {
+.mc-item.mc-item--slideScaleOutUp:hover > .mc-item__image, .mc-item.mc-item--slideScaleOutUp.touch > .mc-item__image, .mc-item.mc-item--slideScaleOutDown:hover > .mc-item__image, .mc-item.mc-item--slideScaleOutDown.touch > .mc-item__image, .mc-item.mc-item--slideScaleOutLeft:hover > .mc-item__image, .mc-item.mc-item--slideScaleOutLeft.touch > .mc-item__image, .mc-item.mc-item--slideScaleOutRight:hover > .mc-item__image, .mc-item.mc-item--slideScaleOutRight.touch > .mc-item__image {
   -webkit-transform: scale(0.5);
   transform: scale(0.5);
 }
 
-.mc-item.mc-item--effect-5:hover > .mc-item__caption, .mc-item.mc-item--effect-5.touch > .mc-item__caption, .mc-item.mc-item--effect-5b:hover > .mc-item__caption, .mc-item.mc-item--effect-5b.touch > .mc-item__caption, .mc-item.mc-item--effect-5c:hover > .mc-item__caption, .mc-item.mc-item--effect-5c.touch > .mc-item__caption, .mc-item.mc-item--effect-5d:hover > .mc-item__caption, .mc-item.mc-item--effect-5d.touch > .mc-item__caption {
+.mc-item.mc-item--slideScaleOutUp:hover > .mc-item__caption, .mc-item.mc-item--slideScaleOutUp.touch > .mc-item__caption, .mc-item.mc-item--slideScaleOutDown:hover > .mc-item__caption, .mc-item.mc-item--slideScaleOutDown.touch > .mc-item__caption, .mc-item.mc-item--slideScaleOutLeft:hover > .mc-item__caption, .mc-item.mc-item--slideScaleOutLeft.touch > .mc-item__caption, .mc-item.mc-item--slideScaleOutRight:hover > .mc-item__caption, .mc-item.mc-item--slideScaleOutRight.touch > .mc-item__caption {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
   -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
 }
 
-.mc-item.mc-item--effect-5 > .mc-item__caption {
-  -webkit-transform: translate(100%, 0);
-  transform: translate(100%, 0);
+.mc-item.mc-item--slideScaleOutUp > .mc-item__caption {
+  -webkit-transform: translate(0, 100%);
+  transform: translate(0, 100%);
 }
 
-.mc-item.mc-item--effect-5b > .mc-item__caption {
-  -webkit-transform: translate(-100%, 0);
-  transform: translate(-100%, 0);
-}
-
-.mc-item.mc-item--effect-5c > .mc-item__caption {
+.mc-item.mc-item--slideScaleOutDown > .mc-item__caption {
   -webkit-transform: translate(0, -100%);
   transform: translate(0, -100%);
 }
 
-.mc-item.mc-item--effect-5d > .mc-item__caption {
-  -webkit-transform: translate(0, 100%);
-  transform: translate(0, 100%);
+.mc-item.mc-item--slideScaleOutLeft > .mc-item__caption {
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+}
+
+.mc-item.mc-item--slideScaleOutRight > .mc-item__caption {
+  -webkit-transform: translate(100%, 0);
+  transform: translate(100%, 0);
 }
 
 /* -------------------------
    Effect 6
 ---------------------------- */
-.mc-item.mc-item--effect-6, .mc-item.mc-item--effect-6b {
+.mc-item.mc-item--slideMediumInLeft, .mc-item.mc-item--slideMediumInRight {
   overflow: hidden;
 }
 
-.mc-item.mc-item--effect-6 > .mc-item__image, .mc-item.mc-item--effect-6b > .mc-item__image {
+.mc-item.mc-item--slideMediumInLeft > .mc-item__image, .mc-item.mc-item--slideMediumInRight > .mc-item__image {
   -webkit-transform: translateX(0);
   transform: translateX(0);
 }
 
-.mc-item.mc-item--effect-6 > .mc-item__caption, .mc-item.mc-item--effect-6b > .mc-item__caption {
+.mc-item.mc-item--slideMediumInLeft > .mc-item__caption, .mc-item.mc-item--slideMediumInRight > .mc-item__caption {
   position: absolute;
   top: 0;
   width: 50%;
   height: 100%;
 }
 
-.mc-item.mc-item--effect-6:hover > .mc-item__caption, .mc-item.mc-item--effect-6.touch > .mc-item__caption, .mc-item.mc-item--effect-6b:hover > .mc-item__caption, .mc-item.mc-item--effect-6b.touch > .mc-item__caption {
+.mc-item.mc-item--slideMediumInLeft:hover > .mc-item__caption, .mc-item.mc-item--slideMediumInLeft.touch > .mc-item__caption, .mc-item.mc-item--slideMediumInRight:hover > .mc-item__caption, .mc-item.mc-item--slideMediumInRight.touch > .mc-item__caption {
   -webkit-transform: translateX(0);
   transform: translateX(0);
 }
 
-.mc-item.mc-item--effect-6 > .mc-item__caption {
+.mc-item.mc-item--slideMediumInLeft > .mc-item__caption {
   left: 0;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
 }
 
-.mc-item.mc-item--effect-6:hover .mc-item__image, .mc-item.mc-item--effect-6.touch .mc-item__image {
+.mc-item.mc-item--slideMediumInLeft:hover .mc-item__image, .mc-item.mc-item--slideMediumInLeft.touch .mc-item__image {
   -webkit-transform: translateX(50%);
   transform: translateX(50%);
 }
 
-.mc-item.mc-item--effect-6b > .mc-item__caption {
+.mc-item.mc-item--slideMediumInRight > .mc-item__caption {
   right: 0;
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
 }
 
-.mc-item.mc-item--effect-6b:hover .mc-item__image, .mc-item.mc-item--effect-6b.touch .mc-item__image {
+.mc-item.mc-item--slideMediumInRight:hover .mc-item__image, .mc-item.mc-item--slideMediumInRight.touch .mc-item__image {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }

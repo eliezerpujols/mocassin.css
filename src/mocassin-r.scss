@@ -8,6 +8,9 @@
 // SETTING
 // ====================================
 //
+// All Name Effects
+@import "variables";
+
 // Breakpoints
 $break-small: 'min-width: 30em';
 $break-medium: 'min-width: 48em';
@@ -37,7 +40,7 @@ $g-timing-function: ease;
       width: 100%;
    }
 	.mc-item__caption {
-		background-color: #7f8c8d; 
+		background-color: #7f8c8d;
 	}
 }
 
@@ -54,5 +57,5 @@ $g-timing-function: ease;
 	@import "effects/effect-3";
 	@import "effects/effect-4";
 	@import "effects/effect-5";
-	@import "effects/effect-6";	
+	@import "effects/effect-6";
 }

@@ -2,14 +2,14 @@
    Effect 3
 ---------------------------- */
 
-// IN THIS EFFECT:
+// IN THIS EFFECT (3):
 //
-// Sliding Caption and Zoom Image
+// Sliding Caption and ScaleIn Image
 .mc-item {
-   &.mc-item--effect-3,
-   &.mc-item--effect-3b,
-   &.mc-item--effect-3c,
-   &.mc-item--effect-3d {
+   &.mc-item--#{$effect-3a},
+   &.mc-item--#{$effect-3b},
+   &.mc-item--#{$effect-3c},
+   &.mc-item--#{$effect-3d} {
       overflow: hidden;
       > .mc-item__image {
          transform: scale(1);
@@ -31,16 +31,16 @@
       }
    }
 
-   &.mc-item--effect-3b,
-   &.mc-item--effect-3d {
+   &.mc-item--#{$effect-3b},
+   &.mc-item--#{$effect-3d} {
       > .mc-item__caption {
          height: 100%;
       }
    }
 
    // From Bottom to Top
-   &.mc-item--effect-3,
-   &.mc-item--effect-3b {
+   &.mc-item--#{$effect-3a},
+   &.mc-item--#{$effect-3b} {
       > .mc-item__caption {
          bottom: 0;
          transform: translateY(100%);
@@ -48,8 +48,8 @@
    }
 
    // From Top to Bottom
-   &.mc-item--effect-3c,
-   &.mc-item--effect-3d {
+   &.mc-item--#{$effect-3c},
+   &.mc-item--#{$effect-3d} {
       > .mc-item__caption {
          top: 0;
          transform: translateY(-100%);

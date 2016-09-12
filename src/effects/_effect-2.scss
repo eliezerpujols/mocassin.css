@@ -2,14 +2,14 @@
    Effect 2
 ---------------------------- */
 
-// IN THIS EFFECT:
+// IN THIS EFFECT (2):
 //
 // Sliding Caption and Image
 .mc-item {
-   &.mc-item--effect-2,
-   &.mc-item--effect-2b,
-   &.mc-item--effect-2c,
-   &.mc-item--effect-2d {
+   &.mc-item--#{$effect-2a},
+   &.mc-item--#{$effect-2b},
+   &.mc-item--#{$effect-2c},
+   &.mc-item--#{$effect-2d} {
       overflow: hidden;
       > .mc-item__image {
          transform: translateY(0);
@@ -19,7 +19,7 @@
          left: 0;
          width: 100%;
       }
-      
+
       &:hover,
       &.touch {
          > .mc-item__caption {
@@ -28,16 +28,16 @@
       }
    }
 
-   &.mc-item--effect-2b,
-   &.mc-item--effect-2d {
+   &.mc-item--#{$effect-2b},
+   &.mc-item--#{$effect-2d} {
       > .mc-item__caption {
          height: 100%;
       }
    }
 
    // From Bottom to Top
-   &.mc-item--effect-2,
-   &.mc-item--effect-2b {
+   &.mc-item--#{$effect-2a},
+   &.mc-item--#{$effect-2b} {
       > .mc-item__caption {
          bottom: 0;
          transform: translateY(100%);
@@ -51,8 +51,8 @@
    }
 
    // From Top to Bottom
-   &.mc-item--effect-2c,
-   &.mc-item--effect-2d {
+   &.mc-item--#{$effect-2c},
+   &.mc-item--#{$effect-2d} {
       > .mc-item__caption {
          top: 0;
          transform: translateY(-100%);
