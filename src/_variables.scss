@@ -3,7 +3,7 @@
 // IN THIS EFFECT (1):
 //
 // fadeIn Caption
-$effect-1b: "fadeInRightDown";
+$effect-1a: "fadeIn";
 
 // IN THIS EFFECT (2):
 //
@@ -16,28 +16,28 @@ $effect-2d: "slideInDownBig";
 // IN THIS EFFECT (3):
 //
 // Sliding Caption and ScaleIn Image
-$effect-3a: "slideScaleInUp";
-$effect-3b: "slideScaleInUpBig";
-$effect-3c: "slideScaleInDown";
-$effect-3d: "slideScaleInDownBig";
+$effect-3a: "slideInUp-zoomIn";
+$effect-3b: "slideInUpBig-zoomIn";
+$effect-3c: "slideInDown-zoomIn";
+$effect-3d: "slideInDownBig-zoomIn";
 
 // IN THIS EFFECT (4):
 //
 // ScaleOut Image
-$effect-4a: "scaleOut";
-$effect-4b: "scaleOutUp";
-$effect-4c: "scaleOutDown";
+$effect-4a: "zoomOut";
+$effect-4b: "zoomOutUp";
+$effect-4c: "zoomOutDown";
 
 // IN THIS EFFECT (5):
 //
 // Sliding Caption and ScaleOut Image
-$effect-5a: "slideScaleOutUp";
-$effect-5b: "slideScaleOutDown";
-$effect-5c: "slideScaleOutLeft";
-$effect-5d: "slideScaleOutRight";
+$effect-5a: "slideInUpBig-zoomOut";
+$effect-5b: "slideInDownBig-zoomOut";
+$effect-5c: "slideInLeftBig-zoomOut";
+$effect-5d: "slideInRightBig-zoomOut";
 
 // IN THIS EFFECT (6):
 //
 // Sliding Caption and Image to the 50%
-$effect-6a: "slideMediumInLeft";
-$effect-6b: "slideMediumInRight";
+$effect-6a: "slideInLeftMedium";
+$effect-6b: "slideInRightMedium";

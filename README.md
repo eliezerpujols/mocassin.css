@@ -63,33 +63,33 @@ Wait please
 3. Finally you need to add one of the following class:
 
 	* fadeIn Caption
-		* `mc-item--fadeInRightDown`
+		* `mc-item--fadeIn`
 	* Sliding Caption and Image
 		* `mc-item--slideInUp`
 		* `mc-item--slideInDown`
 		* `mc-item--slideInUpBig`
 		* `mc-item--slideInDownBig`
 	* Sliding Caption and ScaleIn Image
-		* `mc-item--slideScaleInUp`
-		* `mc-item--slideScaleInDown`
-		* `mc-item--slideScaleInUpBig`
-		* `mc-item--slideScaleInDownBig`
+		* `mc-item--slideInUp-zoomIn`
+		* `mc-item--slideInDown-zoomIn`
+		* `mc-item--slideInUpBig-zoomIn`
+		* `mc-item--slideInDownBig-zoomIn`
 	* ScaleOut Image
 		* `mc-item--scaleOut`
 		* `mc-item--scaleOutUp`
 		* `mc-item--scaleOutDown`
 	* Sliding Caption and ScaleOut Image
-		* `mc-item--slideScaleOutUp`
-		* `mc-item--slideScaleOutDown`
-		* `mc-item--slideScaleOutLeft`
-		* `mc-item--slideScaleOutRight`
+		* `mc-item--slideInUpBig-zoomOut`
+		* `mc-item--slideInDownBig-zoomOut`
+		* `mc-item--slideInLeftBig-zoomOut`
+		* `mc-item--slideInRightBig-zoomOut`
 	* Sliding Caption and Image to the 50%
-		* `mc-item--slideMediumInLeft`
-		* `mc-item--slideMediumInRight`
+		* `mc-item--slideInLeftMedium`
+		* `mc-item--slideInRightMedium`
 
 	Example:
 	```html
-	<figure class="mc-item mc-item--scaleOut">
+	<figure class="mc-item mc-item--zoomOut">
 		<img class="mc-item__image" src="..." alt="...">
 		<figcaption class="mc-item__caption">
 			<h3>This is my content!</h3>
