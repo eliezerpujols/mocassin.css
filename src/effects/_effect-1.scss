@@ -2,11 +2,11 @@
    Effect 1
 ---------------------------- */
 
-// IN THIS EFFECT:
+// IN THIS EFFECT (1):
 //
-// FadeIn and Translate
+// fadeIn Caption
 .mc-item {
-   &.mc-item--effect-1 {
+   &.mc-item--#{$effect-1a} {
       > .mc-item__caption {
          position: absolute;
          top: 0;

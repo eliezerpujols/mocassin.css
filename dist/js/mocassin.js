@@ -1,6 +1,6 @@
 /*!
-   Mocassin CSS v1.2.0
-   Licensed under the MIT license - http://opensource.org/licenses/MIT
+   Mocassin CSS v1.3.0 |  https://wideckop.github.io/mocassin.css/
+   Licensed under the MIT license
 
    Copyright (c) 2016 Eliezer Pujols (Wideckop)
 */
@@ -69,7 +69,7 @@
 		// browser global
 		window.classie = classie;
 	}
-	
+
 	// For touch event on touch screens
 	[].slice.call( document.querySelectorAll( '.mc-item' ) ).forEach( function( el, i ) {
 		el.addEventListener( 'touchstart', function(e) {

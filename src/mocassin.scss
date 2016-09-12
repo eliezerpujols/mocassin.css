@@ -1,15 +1,12 @@
 /*!
-   Mocassin CSS v1.2.0
-   Licensed under the MIT license - http://opensource.org/licenses/MIT
+   Mocassin CSS v1.3.0 |  https://wideckop.github.io/mocassin.css/
+   Licensed under the MIT license
 
    Copyright (c) 2016 Eliezer Pujols (Wideckop)
 */
 
-// SETTING
-// ====================================
-//
-// Global Timing Functions
-$g-timing-function: ease;
+// Import Essential variables
+@import "variables";
 
 // BASE STYLES
 // ====================================
@@ -27,13 +24,13 @@ $g-timing-function: ease;
    > .mc-item__image,
    > .mc-item__caption {
       display: block;
-      transition: all 0.3s $g-timing-function;
+      transition: all $t-duration $t-timing-function;
    }
    > .mc-item__image {
       width: 100%;
    }
 	.mc-item__caption {
-		background-color: #7f8c8d; 
+		background-color: $base-color;
 	}
 }
 
@@ -48,3 +45,4 @@ $g-timing-function: ease;
 @import "effects/effect-4";
 @import "effects/effect-5";
 @import "effects/effect-6";
+@import "effects/effect-7";

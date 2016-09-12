@@ -1,7 +1,9 @@
 # Mocassin.css
+
 Mocassin.css is a responsive collection of hover effects for Captions, powered by [Sass](http://sass-lang.com/). Each caption is adapt the size of the image.
 
 ## Installation
+
 The production code is inside of `dist` folder, you can install it via npm:
 ```
 Wait please
@@ -13,26 +15,32 @@ Wait please
 ```
 
 ## Basic Usage
+
 1. Include the stylesheet on your document's:
 
 	Non-responsive file:
-	```
+
+	```html
 	<head>
 		...
 		<link rel="stylesheet" href="css/mocassin.css"> <!-- Or *.min.css -->
 		...
 	</head>
 	```
+
 	Responsive file (The caption does not hide in small screen):
-	```
+
+	```html
 	<head>
 		...
 		<link rel="stylesheet" href="css/mocassin-r.css"> <!-- Or *.min.css -->
 		...
 	</head>
 	```
+
 	For touch event on touch screens, add:
-	```
+
+	```html
 	<body>
 		...
 		...		
@@ -42,7 +50,8 @@ Wait please
 
 2. Add class `mc-item` to the main, `mc-item__image` to the `<img ...>` element, and `mc-item__caption` to the content caption.
 	Example:
-	```
+
+	```html
 	<figure class="mc-item">
 		<img class="mc-item__image" src="..." alt="...">
 		<figcaption class="mc-item__caption">
@@ -53,26 +62,39 @@ Wait please
 
 3. Finally you need to add one of the following class:
 
-	* `mc-item--effect-1`
-	* `mc-item--effect-2`
-		* `mc-item--effect-2b`
-		* `mc-item--effect-2c`
-		* `mc-item--effect-2d`
-	* `mc-item--effect-3`
-		* `mc-item--effect-3b`
-		* `mc-item--effect-3c`
-		* `mc-item--effect-3d`
-	* `mc-item--effect-4`
-		* `mc-item--effect-4b`
-		* `mc-item--effect-4c`
-	* `mc-item--effect-5`
-		* `mc-item--effect-5b`
-		* `mc-item--effect-5c`
-		* `mc-item--effect-5d`
-		
+	* fadeIn Caption
+		* `mc-item--fadeIn`
+	* Sliding Caption and Image
+		* `mc-item--slideInUp`
+		* `mc-item--slideInDown`
+		* `mc-item--slideInUpBig`
+		* `mc-item--slideInDownBig`
+	* Sliding Caption and ScaleIn Image
+		* `mc-item--slideInUp-zoomIn`
+		* `mc-item--slideInDown-zoomIn`
+		* `mc-item--slideInUpBig-zoomIn`
+		* `mc-item--slideInDownBig-zoomIn`
+	* ScaleOut Image
+		* `mc-item--scaleOut`
+		* `mc-item--scaleOutUp`
+		* `mc-item--scaleOutDown`
+	* Sliding Caption and ScaleOut Image
+		* `mc-item--slideInUpBig-zoomOut`
+		* `mc-item--slideInDownBig-zoomOut`
+		* `mc-item--slideInLeftBig-zoomOut`
+		* `mc-item--slideInRightBig-zoomOut`
+	* Sliding Caption and Image to the 50% (Half)
+		* `mc-item--slideInLeftHalf`
+		* `mc-item--slideInRightHalf`
+	* Flip Out Caption
+		* `mc-item--flipOutUp`
+		* `mc-item--flipOutDown`
+		* `mc-item--flipOutLeft`
+		* `mc-item--flipOutRight`
+
 	Example:
-	```
-	<figure class="mc-item mc-item--effect-2b">
+	```html
+	<figure class="mc-item mc-item--zoomOut">
 		<img class="mc-item__image" src="..." alt="...">
 		<figcaption class="mc-item__caption">
 			<h3>This is my content!</h3>
@@ -81,19 +103,45 @@ Wait please
 	```
 
 ## Custom Builds
-Mocassin.css is powered by [Gulp](http://gulpjs.com/), and you can create custom buils. First you'll need Gulp and other dependencies:
-```
+
+Mocassin.css is powered by [Gulp](http://gulpjs.com/), and you can create custom builds. First you'll need Gulp and other dependencies:
+
+```bash
 $ cd path/to/mocassin.css/
 $ sudo npm install
 ```
 
 Now, you can eliminate in `mocassin.scss` or `mocassin-r.scss` those effects that do not want, and then run with:
-```
+
+```bash
 $ gulp createCSS
 ```
 
-## Contributing 
-I only have two rules for submitting a pull request: match the naming convention: [BEM](https://en.bem.info/methodology/), and let us see a demo of submitted effects in CodePen.
+## Contributing
 
-## Lisence
+I only have three rules for submitting a pull request:
+
+1. Match the follow naming convention (`camelCase`):
+
+	```
+	mc-item--[captionEffect] || [imageEffect] || [captionEffect]-[imageEffect] || [sameEffect]
+	```
+
+	* `mc-item--[captionEffect]`: Effect that only happen to the Caption.
+	* `mc-item--[imageEffect]`: Effect that only happen to the Image.
+	* `mc-item--[captionEffect]-[imageEffect]`: Effect that happen to the Caption, and effect that happen to the Image.
+	* `mc-item--[sameEffect]`: The same effect for those two.
+
+	Example:
+
+	```html
+	<figure class="mc-item mc-item--slideInUp-zoomIn">
+		<!-- Caption [SlideInUp] and Image [ZoomIn] -->
+	</figure>
+	```
+2. Let us see a demo of submitted effects in CodePen.
+3. The PR must aim to `develop` branch and not to `master` branch. The branch of the feature must be started as `feature/[issue]-feature-name`.
+
+## License
+
 Mocassin.css is licensed under the [MIT](http://opensource.org/licenses/MIT) license.
