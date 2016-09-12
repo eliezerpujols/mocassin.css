@@ -1,0 +1,115 @@
+/* -------------------------
+   Effect 7
+---------------------------- */
+
+// IN THIS EFFECT (7):
+//
+// Flip Out Caption
+.mc-item {
+   &.mc-item--#{$effect-7a},
+   &.mc-item--#{$effect-7b},
+   &.mc-item--#{$effect-7c},
+   &.mc-item--#{$effect-7d} {
+      perspective: 82em;
+      .mc-item__image {
+         opacity: 1;
+      }
+      > .mc-item__caption {
+         position: absolute;
+         opacity: 0;
+         visibility: hidden;
+         width: 100%;
+         height: 100%;
+      }
+
+		&:hover,
+      &.touch {
+         .mc-item__image {
+            opacity: 0;
+         }
+         > .mc-item__caption {
+            opacity: 1;
+            visibility: visible;
+				transform: rotate3d(0, 0, 0, 0);
+			}
+      }
+   }
+
+   // Rotating  3D X
+   &.mc-item--#{$effect-7a} {
+      > .mc-item__image,
+      > .mc-item__caption {
+         transform-origin: 0% 100%;
+      }
+      > .mc-item__caption {
+         left: 0;
+         bottom: 0;
+         transform: rotate3d(1, 0, 0, -90deg);
+      }
+
+      &:hover,
+      &.touch {
+         > .mc-item__image {
+            transform: rotate3d(1, 0, 0, 90deg);
+         }
+      }
+   }
+
+   &.mc-item--#{$effect-7b} {
+      > .mc-item__image,
+      > .mc-item__caption {
+         transform-origin: 0% 0%;
+      }
+      > .mc-item__caption {
+         top: 0;
+         left: 0;
+         transform: rotate3d(1, 0, 0, 90deg);
+      }
+
+      &:hover,
+      &.touch {
+         > .mc-item__image {
+            transform: rotate3d(1, 0, 0, -90deg);
+         }
+      }
+   }
+
+   // Rotating 3D In Y
+   &.mc-item--#{$effect-7c} {
+      > .mc-item__image,
+      > .mc-item__caption {
+         transform-origin: 0% 0%;
+      }
+      > .mc-item__caption {
+         top: 0;
+         left: 0;
+         transform: rotate3d(0, 1, 0, -90deg);
+      }
+
+      &:hover,
+      &.touch {
+			> .mc-item__image {
+				transform: rotate3d(0, 1, 0,  90deg);
+			}
+      }
+   }
+
+   &.mc-item--#{$effect-7d} {
+      > .mc-item__image,
+      > .mc-item__caption {
+         transform-origin: 100% 0%;
+      }
+      > .mc-item__caption {
+         top: 0;
+         right: 0;
+         transform: rotate3d(0, 1, 0, 90deg);
+      }
+
+      &:hover,
+      &.touch {
+         > .mc-item__image {
+            transform: rotate3d(0, 1, 0, -90deg);
+         }
+      }
+   }
+}

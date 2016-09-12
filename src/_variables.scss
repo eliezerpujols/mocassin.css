@@ -1,5 +1,20 @@
-// ALL NAME FOR EFFECTS
+// SETTING
+// ====================================
+//
+// Global Timing Functions
+$t-timing-function: ease-in;
+$t-duration: 0.3s;
 
+// Breakpoints
+$break-small: 'min-width: 30em';
+$break-medium: 'min-width: 48em';
+
+// Base Background Color
+$base-color: #7f8c8d;
+
+// ALL NAME FOR EFFECTS
+// ====================================
+//
 // IN THIS EFFECT (1):
 //
 // fadeIn Caption
@@ -38,6 +53,14 @@ $effect-5d: "slideInRightBig-zoomOut";
 
 // IN THIS EFFECT (6):
 //
-// Sliding Caption and Image to the 50%
-$effect-6a: "slideInLeftMedium";
-$effect-6b: "slideInRightMedium";
+// Sliding Caption and Image to the 50% (Half)
+$effect-6a: "slideInLeftHalf";
+$effect-6b: "slideInRightHalf";
+
+// IN THIS EFFECT (7):
+//
+// Flip Out Caption
+$effect-7a: "flipOutUp";
+$effect-7b: "flipOutDown";
+$effect-7c: "flipOutLeft";
+$effect-7d: "flipOutRight";
