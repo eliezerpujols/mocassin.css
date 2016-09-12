@@ -37,7 +37,7 @@
          <!-- Box Effets -->
          <div class="demo-layout__column">
             <div class="demo-wrapper">
-               <figure id="figureEffects" class="demo-item mc-item mc-item--effect-1">
+               <figure id="figureEffects" class="demo-item mc-item mc-item--fadeIn">
                   <img class="mc-item__image" src="assets/img/demo-img.jpg" alt="Image Demo">
                   <figcaption class="mc-item__caption">
                      <h3>Title Caption</h3>
@@ -46,24 +46,42 @@
                </figure>
                <form>
                   <select class="demo-input js--effects">
-                     <option value="mc-item--effect-1">Effect-1</option>
-                     <option value="mc-item--effect-2">Effect-2</option>
-                     <option value="mc-item--effect-2b">Effect-2b</option>
-                     <option value="mc-item--effect-2c">Effect-2c</option>
-                     <option value="mc-item--effect-2d">Effect-2d</option>
-                     <option value="mc-item--effect-3">Effect-3</option>
-                     <option value="mc-item--effect-3b">Effect-3b</option>
-                     <option value="mc-item--effect-3c">Effect-3c</option>
-                     <option value="mc-item--effect-3d">Effect-3d</option>
-                     <option value="mc-item--effect-4">Effect-4</option>
-                     <option value="mc-item--effect-4b">Effect-4b</option>
-                     <option value="mc-item--effect-4c">Effect-4c</option>
-                     <option value="mc-item--effect-5">Effect-5</option>
-                     <option value="mc-item--effect-5b">Effect-5b</option>
-                     <option value="mc-item--effect-5c">Effect-5c</option>
-                     <option value="mc-item--effect-5d">Effect-5d</option>
-                     <option value="mc-item--effect-6">Effect-6</option>
-                     <option value="mc-item--effect-6b">Effect-6b</option>
+                     <optgroup label="FadeIn Caption">
+                        <option value="mc-item--fadeIn">fadeIn</option>
+                     </optgroup>
+                     <optgroup label="Sliding Caption and Image">
+                        <option value="mc-item--slideInUp">slideInUp</option>
+                        <option value="mc-item--slideInDown">slideInDown</option>
+                        <option value="mc-item--slideInUpBig">slideInUpBig</option>
+                        <option value="mc-item--slideInDownBig">slideInDownBig</option>
+                     </optgroup>
+                     <optgroup label="Sliding Caption and ZoomIn Image">
+                        <option value="mc-item--slideInUp-zoomIn">slideInUp-zoomIn</option>
+                        <option value="mc-item--slideInDown-zoomIn">slideInDown-zoomIn</option>
+                        <option value="mc-item--slideInUpBig-zoomIn">slideInUpBig-zoomIn</option>
+                        <option value="mc-item--slideInDownBig-zoomIn">slideInDownBig-zoomIn</option>
+                     </optgroup>
+                     <optgroup label="ZoomOut Image">
+                        <option value="mc-item--zoomOut">zoomOut</option>
+                        <option value="mc-item--zoomOutUp">zoomOutUp</option>
+                        <option value="mc-item--zoomOutDown">zoomOutDown</option>
+                     </optgroup>
+                     <optgroup label="Sliding Caption and ZoomOut Image">
+                        <option value="mc-item--slideInUpBig-zoomOut">slideInUpBig-zoomOut</option>
+                        <option value="mc-item--slideInDownBig-zoomOut">slideInDownBig-zoomOut</option>
+                        <option value="mc-item--slideInLeftBig-zoomOut">slideInLeftBig-zoomOut</option>
+                        <option value="mc-item--slideInRightBig-zoomOut">slideInRightBig-zoomOut</option>
+                     </optgroup>
+                     <optgroup label="Sliding Caption and Image to the 50% (Half)">
+                        <option value="mc-item--slideInLeftHalf">slideInLeftHalf</option>
+                        <option value="mc-item--slideInRightHalf">slideInRightHalf</option>
+                     </optgroup>
+                     <optgroup label="FlipOut Caption and Image">
+                        <option value="mc-item--flipOutUp">flipOutUp</option>
+                        <option value="mc-item--flipOutDown">flipOutDown</option>
+                        <option value="mc-item--flipOutLeft">flipOutLeft</option>
+                        <option value="mc-item--flipOutRight">flipOutRight</option>
+                     </optgroup>
                   </select>
                </form>
             </div>
