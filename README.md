@@ -120,23 +120,27 @@ $ gulp createCSS
 ## Contributing
 
 I only have three rules for submitting a pull request:
-	1. Match the follow naming convention (`camelCase`):
-		```
-		mc-item--[captionEffect] || [imageEffect] || [captionEffect]-[imageEffect] || [sameEffect]
-		```
-		* `mc-item--[captionEffect]`: Effect that only happen to the Caption.
-		* `mc-item--[imageEffect]`: Effect that only happen to the Image.
-		* `mc-item--[captionEffect]-[imageEffect]`: Effect that happen to the Caption, and effect that happen to the Image.
-		* `mc-item--[sameEffect]`: The same effect for those two.
 
-		Example:
-		```html
-			<figure class="mc-item mc-item--slideInUp-zoomIn">
-				<!-- Caption [SlideInUp] and Image [ZoomIn] -->
-			</figure>
-		```
-	2. Let us see a demo of submitted effects in CodePen.
-	3. The PR must aim to `develop` branch and not to `master` branch. The branch of the feature must be started as `feature/[issue]-feature-name`.
+1. Match the follow naming convention (`camelCase`):
+
+	```
+	mc-item--[captionEffect] || [imageEffect] || [captionEffect]-[imageEffect] || [sameEffect]
+	```
+
+	* `mc-item--[captionEffect]`: Effect that only happen to the Caption.
+	* `mc-item--[imageEffect]`: Effect that only happen to the Image.
+	* `mc-item--[captionEffect]-[imageEffect]`: Effect that happen to the Caption, and effect that happen to the Image.
+	* `mc-item--[sameEffect]`: The same effect for those two.
+
+	Example:
+
+	```html
+	<figure class="mc-item mc-item--slideInUp-zoomIn">
+		<!-- Caption [SlideInUp] and Image [ZoomIn] -->
+	</figure>
+	```
+2. Let us see a demo of submitted effects in CodePen.
+3. The PR must aim to `develop` branch and not to `master` branch. The branch of the feature must be started as `feature/[issue]-feature-name`.
 
 ## License
 
