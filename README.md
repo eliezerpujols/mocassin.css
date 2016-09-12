@@ -69,16 +69,16 @@ Wait please
 		* `mc-item--slideInDown`
 		* `mc-item--slideInUpBig`
 		* `mc-item--slideInDownBig`
-	* Sliding Caption and ScaleIn Image
+	* Sliding Caption and ZoomIn Image
 		* `mc-item--slideInUp-zoomIn`
 		* `mc-item--slideInDown-zoomIn`
 		* `mc-item--slideInUpBig-zoomIn`
 		* `mc-item--slideInDownBig-zoomIn`
-	* ScaleOut Image
-		* `mc-item--scaleOut`
-		* `mc-item--scaleOutUp`
-		* `mc-item--scaleOutDown`
-	* Sliding Caption and ScaleOut Image
+	* ZoomOut Image
+		* `mc-item--zoomOut`
+		* `mc-item--zoomOutUp`
+		* `mc-item--zoomOutDown`
+	* Sliding Caption and ZoomOut Image
 		* `mc-item--slideInUpBig-zoomOut`
 		* `mc-item--slideInDownBig-zoomOut`
 		* `mc-item--slideInLeftBig-zoomOut`
