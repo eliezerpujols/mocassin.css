@@ -2,12 +2,12 @@
    Effect 6
 ---------------------------- */
 
-// IN THIS EFFECT:
+// IN THIS EFFECT (6):
 //
-// Translate Image
+// Sliding Caption and Image to the 50%
 .mc-item {
-   &.mc-item--effect-6,
-   &.mc-item--effect-6b {		
+   &.mc-item--#{$effect-6a},
+   &.mc-item--#{$effect-6b} {
 		overflow: hidden;
 		> .mc-item__image {
 			transform: translateX(0)
@@ -26,30 +26,30 @@
       }
    }
 
-	// Left to Right
-	&.mc-item--effect-6 {	
+	// From Left to Right
+	&.mc-item--#{$effect-6a} {
 		> .mc-item__caption {
 			left: 0;
 			transform: translateX(-100%);
-      }		
+      }
 		&:hover,
       &.touch {
 			.mc-item__image {
-				transform: translateX(50%);				
+				transform: translateX(50%);
 			}
       }
 	}
 
-	// Right to Left
-	&.mc-item--effect-6b {	
+	// From Right to Left
+	&.mc-item--#{$effect-6b} {
 		> .mc-item__caption {
 			right: 0;
 			transform: translateX(100%);
-      }		
+      }
 		&:hover,
       &.touch {
 			.mc-item__image {
-				transform: translateX(-50%);				
+				transform: translateX(-50%);
 			}
       }
 	}

@@ -2,13 +2,13 @@
    Effect 4
 ---------------------------- */
 
-// IN THIS EFFECT:
+// IN THIS EFFECT (4):
 //
-// Image ZoomOut
+// ScaleOut Image
 .mc-item {
-   &.mc-item--effect-4,
-   &.mc-item--effect-4b,	
-	&.mc-item--effect-4c {
+   &.mc-item--#{$effect-4a},
+   &.mc-item--#{$effect-4b},
+	&.mc-item--#{$effect-4c} {
       > .mc-item__image {
          z-index: 2;
 			position: relative;
@@ -22,7 +22,7 @@
          width: 100%;
          height: 100%;
       }
-      
+
       &:hover,
       &.touch {
          > .mc-item__image {
@@ -31,7 +31,8 @@
       }
    }
 
-	&.mc-item--effect-4b {
+   // ScaleOutUp
+	&.mc-item--#{$effect-4b} {
 		&:hover,
       &.touch {
          > .mc-item__image {
@@ -40,7 +41,8 @@
       }
 	}
 
-	&.mc-item--effect-4c {
+   // ScaleOutDown
+	&.mc-item--#{$effect-4c} {
 		&:hover,
       &.touch {
          > .mc-item__image {

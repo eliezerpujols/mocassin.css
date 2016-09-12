@@ -62,28 +62,34 @@ Wait please
 
 3. Finally you need to add one of the following class:
 
-	* `mc-item--effect-1`
-	* `mc-item--effect-2`
-		* `mc-item--effect-2b`
-		* `mc-item--effect-2c`
-		* `mc-item--effect-2d`
-	* `mc-item--effect-3`
-		* `mc-item--effect-3b`
-		* `mc-item--effect-3c`
-		* `mc-item--effect-3d`
-	* `mc-item--effect-4`
-		* `mc-item--effect-4b`
-		* `mc-item--effect-4c`
-	* `mc-item--effect-5`
-		* `mc-item--effect-5b`
-		* `mc-item--effect-5c`
-		* `mc-item--effect-5d`
-	* `mc-item--effect-6`
-		* `mc-item--effect-6b`
+	* fadeIn Caption
+		* `mc-item--fadeIn`
+	* Sliding Caption and Image
+		* `mc-item--slideInUp`
+		* `mc-item--slideInDown`
+		* `mc-item--slideInUpBig`
+		* `mc-item--slideInDownBig`
+	* Sliding Caption and ScaleIn Image
+		* `mc-item--slideInUp-zoomIn`
+		* `mc-item--slideInDown-zoomIn`
+		* `mc-item--slideInUpBig-zoomIn`
+		* `mc-item--slideInDownBig-zoomIn`
+	* ScaleOut Image
+		* `mc-item--scaleOut`
+		* `mc-item--scaleOutUp`
+		* `mc-item--scaleOutDown`
+	* Sliding Caption and ScaleOut Image
+		* `mc-item--slideInUpBig-zoomOut`
+		* `mc-item--slideInDownBig-zoomOut`
+		* `mc-item--slideInLeftBig-zoomOut`
+		* `mc-item--slideInRightBig-zoomOut`
+	* Sliding Caption and Image to the 50%
+		* `mc-item--slideInLeftMedium`
+		* `mc-item--slideInRightMedium`
 
 	Example:
 	```html
-	<figure class="mc-item mc-item--effect-2b">
+	<figure class="mc-item mc-item--zoomOut">
 		<img class="mc-item__image" src="..." alt="...">
 		<figcaption class="mc-item__caption">
 			<h3>This is my content!</h3>

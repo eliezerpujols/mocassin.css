@@ -2,14 +2,14 @@
    Effect 5
 ---------------------------- */
 
-// IN THIS EFFECT:
+// IN THIS EFFECT (5):
 //
-// Image Scale and Caption Translate
+// Sliding Caption and ScaleOut Image
 .mc-item {
-   &.mc-item--effect-5,
-   &.mc-item--effect-5b,
-   &.mc-item--effect-5c,
-   &.mc-item--effect-5d {
+   &.mc-item--#{$effect-5a},
+   &.mc-item--#{$effect-5b},
+   &.mc-item--#{$effect-5c},
+   &.mc-item--#{$effect-5d} {
       overflow: hidden;
       > .mc-item__image {
          transform: scale(1);
@@ -30,10 +30,10 @@
       }
    }
 
-   &.mc-item--effect-5,
-   &.mc-item--effect-5b,
-   &.mc-item--effect-5c,
-   &.mc-item--effect-5d {
+   &.mc-item--#{$effect-5a},
+   &.mc-item--#{$effect-5b},
+   &.mc-item--#{$effect-5c},
+   &.mc-item--#{$effect-5d} {
 		&:hover,
 		&.touch {
 			> .mc-item__caption {
@@ -43,27 +43,27 @@
 		}
    }
 
-   // Scale and Translate in X
-   &.mc-item--effect-5 {
+   // Sliding and ScaleOut in Y
+   &.mc-item--#{$effect-5a} {
       > .mc-item__caption {
-         transform: translate(100%, 0);
+         transform: translate(0, 100%);
       }
    }
-   &.mc-item--effect-5b {
-      > .mc-item__caption {
-         transform: translate(-100%, 0);
-      }
-   }
-
-   // Scale and Translate in Y
-   &.mc-item--effect-5c {
+   &.mc-item--#{$effect-5b} {
       > .mc-item__caption {
          transform: translate(0, -100%);
       }
    }
-   &.mc-item--effect-5d {
+
+   // Sliding and ScaleOut in X
+   &.mc-item--#{$effect-5c} {
       > .mc-item__caption {
-         transform: translate(0, 100%);
+         transform: translate(-100%, 0);
+      }
+   }
+   &.mc-item--#{$effect-5d} {
+      > .mc-item__caption {
+         transform: translate(100%, 0);
       }
    }
 }
