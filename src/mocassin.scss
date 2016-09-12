@@ -5,14 +5,8 @@
    Copyright (c) 2016 Eliezer Pujols (Wideckop)
 */
 
-// SETTING
-// ====================================
-//
-// All Name Effects
+// Import Essential variables
 @import "variables";
-
-// Global Timing Functions
-$g-timing-function: ease;
 
 // BASE STYLES
 // ====================================
@@ -30,13 +24,13 @@ $g-timing-function: ease;
    > .mc-item__image,
    > .mc-item__caption {
       display: block;
-      transition: all 0.3s $g-timing-function;
+      transition: all $t-duration $t-timing-function;
    }
    > .mc-item__image {
       width: 100%;
    }
 	.mc-item__caption {
-		background-color: #7f8c8d;
+		background-color: $base-color;
 	}
 }
 
@@ -51,3 +45,4 @@ $g-timing-function: ease;
 @import "effects/effect-4";
 @import "effects/effect-5";
 @import "effects/effect-6";
+@import "effects/effect-7";

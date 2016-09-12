@@ -83,9 +83,14 @@ Wait please
 		* `mc-item--slideInDownBig-zoomOut`
 		* `mc-item--slideInLeftBig-zoomOut`
 		* `mc-item--slideInRightBig-zoomOut`
-	* Sliding Caption and Image to the 50%
-		* `mc-item--slideInLeftMedium`
-		* `mc-item--slideInRightMedium`
+	* Sliding Caption and Image to the 50% (Half)
+		* `mc-item--slideInLeftHalf`
+		* `mc-item--slideInRightHalf`
+	* Flip Out Caption
+		* `mc-item--flipOutUp`
+		* `mc-item--flipOutDown`
+		* `mc-item--flipOutLeft`
+		* `mc-item--flipOutRight`
 
 	Example:
 	```html
