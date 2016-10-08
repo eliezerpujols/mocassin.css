@@ -4,53 +4,53 @@
 
 // IN THIS EFFECT (6):
 //
-// Sliding Caption and Image to the 50%
+/* Sliding Caption and Image to the 50% */
 .mc-item {
    &.mc-item--#{$effect-6a},
    &.mc-item--#{$effect-6b} {
-		overflow: hidden;
-		> .mc-item__image {
-			transform: translateX(0)
-		}
+      overflow: hidden;
+      > .mc-item__image {
+         transform: translateX(0)
+      }
       > .mc-item__caption {
          position: absolute;
          top: 0;
          width: 50%;
          height: 100%;
       }
-		&:hover,
+      &:hover,
       &.touch {
-			> .mc-item__caption {
-				transform: translateX(0);
-			}
+         > .mc-item__caption {
+            transform: translateX(0);
+         }
       }
    }
 
-	// From Left to Right
-	&.mc-item--#{$effect-6a} {
-		> .mc-item__caption {
-			left: 0;
-			transform: translateX(-100%);
+   // From Left to Right
+   &.mc-item--#{$effect-6a} {
+      > .mc-item__caption {
+         left: 0;
+         transform: translateX(-100%);
       }
-		&:hover,
+      &:hover,
       &.touch {
-			.mc-item__image {
-				transform: translateX(50%);
-			}
+         .mc-item__image {
+            transform: translateX(50%);
+         }
       }
-	}
+   }
 
-	// From Right to Left
-	&.mc-item--#{$effect-6b} {
-		> .mc-item__caption {
-			right: 0;
-			transform: translateX(100%);
+   // From Right to Left
+   &.mc-item--#{$effect-6b} {
+      > .mc-item__caption {
+         right: 0;
+         transform: translateX(100%);
       }
-		&:hover,
+      &:hover,
       &.touch {
-			.mc-item__image {
-				transform: translateX(-50%);
-			}
+         .mc-item__image {
+         transform: translateX(-50%);
+         }
       }
-	}
+   }
 }
