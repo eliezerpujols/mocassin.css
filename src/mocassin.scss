@@ -11,7 +11,7 @@
 // BASE STYLES
 // ====================================
 //
-// Setting styles for the caption effects.
+/* Setting styles for the caption effects.*/
 .mc-item,
 .mc-item > * {
    box-sizing: border-box;
@@ -29,9 +29,9 @@
    > .mc-item__image {
       width: 100%;
    }
-	.mc-item__caption {
-		background-color: $base-color;
-	}
+   .mc-item__caption {
+      background-color: $base-color;
+   }
 }
 
 // IMPORT EFFECTS

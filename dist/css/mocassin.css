@@ -4,6 +4,7 @@
 
    Copyright (c) 2016 Eliezer Pujols (Wideckop)
 */
+/* Setting styles for the caption effects.*/
 .mc-item,
 .mc-item > * {
   box-sizing: border-box;
@@ -33,6 +34,7 @@
 /* -------------------------
    Effect 1
 ---------------------------- */
+/* fadeIn Caption */
 .mc-item.mc-item--fadeIn > .mc-item__caption {
   position: absolute;
   top: 0;
@@ -53,6 +55,7 @@
 /* -------------------------
    Effect 2
 ---------------------------- */
+/* Sliding Caption and Image */
 .mc-item.mc-item--slideInUp, .mc-item.mc-item--slideInUpBig, .mc-item.mc-item--slideInDown, .mc-item.mc-item--slideInDownBig {
   overflow: hidden;
 }
@@ -102,6 +105,7 @@
 /* -------------------------
    Effect 3
 ---------------------------- */
+/* Sliding Caption and ScaleIn Image */
 .mc-item.mc-item--slideInUp-zoomIn, .mc-item.mc-item--slideInUpBig-zoomIn, .mc-item.mc-item--slideInDown-zoomIn, .mc-item.mc-item--slideInDownBig-zoomIn {
   overflow: hidden;
 }
@@ -146,6 +150,7 @@
 /* -------------------------
    Effect 4
 ---------------------------- */
+/* ScaleOut Image */
 .mc-item.mc-item--zoomOut > .mc-item__image, .mc-item.mc-item--zoomOutUp > .mc-item__image, .mc-item.mc-item--zoomOutDown > .mc-item__image {
   z-index: 2;
   position: relative;
@@ -180,6 +185,7 @@
 /* -------------------------
    Effect 5
 ---------------------------- */
+/* Sliding Caption and ScaleOut Image */
 .mc-item.mc-item--slideInUpBig-zoomOut, .mc-item.mc-item--slideInDownBig-zoomOut, .mc-item.mc-item--slideInLeftBig-zoomOut, .mc-item.mc-item--slideInRightBig-zoomOut {
   overflow: hidden;
 }
@@ -232,6 +238,7 @@
 /* -------------------------
    Effect 6
 ---------------------------- */
+/* Sliding Caption and Image to the 50% */
 .mc-item.mc-item--slideInLeftHalf, .mc-item.mc-item--slideInRightHalf {
   overflow: hidden;
 }
@@ -278,6 +285,7 @@
 /* -------------------------
    Effect 7
 ---------------------------- */
+/* Flip Out Caption */
 .mc-item.mc-item--flipOutUp, .mc-item.mc-item--flipOutDown, .mc-item.mc-item--flipOutLeft, .mc-item.mc-item--flipOutRight {
   -webkit-perspective: 82em;
   perspective: 82em;
